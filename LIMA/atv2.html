@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>Aula3 atv2</title>
+	</head>
+	<body>
+		<h1>
+			<font face="arial">Manutenção do sistema interno</font>
+        </h1>
+        <form>
+            <label for="login"><b>Login &nbsp;</b></label>
+            <input id="login" type="text"/><br>
+            <br>
+            <label for="senha"><b>Senha &nbsp;</b></label>
+            <input id="senha"type="password">
+            <br>
+            <br>
+            <label for="status"><b>Status &nbsp;</b></label>
+            <select id="status">
+                <option>Inativo</option>
+                <option>Ativo</option>
+            </select>
+            <br>
+            <br>
+            <label><b>Tipo &nbsp;</b></label>
+            <input type="radio" id="tec" name="tipo">
+            <label for="tec">Técnico</label>
+            <input type="radio" id="prof" name="tipo">
+            <label for="prof">Professor</label>
+            <input type="radio" id="aluno" name="tipo">
+            <label for="aluno">Aluno</label>
+            <br>
+            <br>
+            <label for="data"><b>Data Criação &nbsp;</b></label>
+            <input type="date" id="data"required/>
+            <br>
+            <br>
+            <label><b>Perfil &nbsp;</b></label>
+            <input type="radio" id="conv" name="perfil"required/>
+            <label for="conv">Convidado</label>
+            <input type="radio" id="admin" name="peril"required/>
+            <label for="admin">Administrador</label>
+            <br>
+            <br>
+            <label for="obs"><b>Obsevações &nbsp;</b></label>
+            <br>
+            <textarea></textarea>
+            <br>
+            <br>
+            <label><b>Módulos</b></label>
+            <input type="checkbox" id="comp"/>
+            <label for="comp">Compras</label>
+            <input type="checkbox" id="biblio"/>
+            <label for="biblio">Biblioteca></label>
+            <input type="checkbox" id="acad"/>
+            <label for="acad">Acadêmico</label>
+            <input type="checkbox" id="doc"/>
+            <label for="doc">Documentação</label>
+            <input type="checkbox" id="rec"/>
+            <label for="rec">Recursos Humanos</label>
+            <br>
+            <br>
+            <input type="submit" value="Cadastrar"/>
+            <input type="reset" value="Excluir"/>
+        </form>

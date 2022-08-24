@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Iso&family=Silkscreen&display=swap');
+p {
+    color: rgb(227, 246, 83);
+    font-size: xx-larger;
+    font-family: Rubik Iso;
+}
+#texto{
+    color: greenyellow;
+    font-family: Silkscreen;
+    font-size: xx-large;
+}
+.título{
+    color: aqua;
+    font-size: xx-large;
+    font-family: times;
+}
+#paragrafo{
+    font-size: xx-large;
+}
+/* Imagem de fundo */
+body{
+    background-image: url("/assets/chip.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
