@@ -2,25 +2,34 @@
 #include<locale.h>
 int main(){
 	setlocale(LC_ALL,"");
-	int vet1 [5];
-	int vet2 [5];
-	int i = 0;
-	int j = 4;
-	int total;
-	int cont;
-	//Repetição do primeiro vetor
-	while(i <= 4){
-	printf("Digite um número para adicioná-lo ao primeiro vetor:\n");
-	scanf("%d",&vet1[i]);
-	cont = cont + i;
-	i++;
+	int vetor1 [5], vetor2 [5], i;
+	int resultado1, resultado2, resultado3, resultado4, resultado5;
+	//vetor 1
+	printf("Vetor N° 1:\n");
+	for(i = 0; i < 5; i++){
+		printf("Digite um valor para o índice %d: ",i);
+		scanf("%d",&vetor1[i]);
 	}
-	total = total + cont;
-	printf("Total da soma setor 1 é: %d",total);
-/*	//Repetição do segundo vetor
-	while(j >= 0){
-		printf("Digite outros números para adicioná-los ao segundo vetor:\n");
-		scanf("%d",&vet2[j]);
-		j--;
-	}*/
+	
+	//vetor 2
+	printf("Vetor N° 2:\n");
+	for(i = 0; i < 5; i++){
+		printf("Digite um valor para o índice %d: ",i);
+		scanf("%d",&vetor2[i]);
+	}
+	printf("\n\n");
+	
+	//saída
+	for(i = 0; i < 5; i++)
+	resultado1 = vetor1[0] + vetor2[4];
+	resultado2 = vetor1[1] + vetor2[3];
+	resultado3 = vetor1[2] + vetor2[2];
+	resultado4 = vetor1[3] + vetor2[1];
+	resultado5 = vetor1[4] + vetor2[0];
+	printf("Resultado 1: %d\n", resultado1);
+	printf("Resultado 2: %d\n", resultado2);
+	printf("Resultado 3: %d\n", resultado3);
+	printf("Resultado 4: %d\n", resultado4);
+	printf("Resultado 5: %d\n", resultado5);	
 }
+
