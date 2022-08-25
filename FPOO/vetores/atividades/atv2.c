@@ -2,14 +2,21 @@
 #include<locale.h>
 int main(){
 	setlocale(LC_ALL,"");
-	int i,vetor[10];
+	int num, par, impar, i;
+	int par[10], impar[10], pares = 0, impares = 0;
+	//Escaneando os números digitados
+	do{
+		printf("digite um numero para entrar no vetor:");
+		scanf("%d",&num);
 	
-	for(i = 0; i < 10; i++){
-		printf("Digite um valor para o índice %d",i);
-		scanf("%d",&vetor[i]);
+			if(num % 2 == 0){
+				par[pares] = num;
+				pares++;
+			}else{
+				impar[impares] = num;
+				impares++;
 	}
-	if(vetor[1] % 2 == 0){
-		for(i = 0; i < 10; i += 2);
-		printf("%d",vetor[i]);
-	}
+}while(pares < 10 && impares < 10);
+	printf("\n Soma de todos os números pares:\n")
+
 }

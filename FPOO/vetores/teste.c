@@ -1,34 +1,34 @@
 #include<stdio.h>
-#include<locale.h>
-int main(){
-	setlocale(LC_ALL,"");
-	int i, vetor1[5], vetor2[5];
-	
-	//primeiro vetor	
-	for(i = 0; i < 5; i++){
-		printf("Digite o valor do índice %d: ",i);
-		scanf("%d", &vetor1[i]);
-	}
-	printf("\n\n");
-	
-	//segundo vetor
-	for(i = 4; i >= 0; i--){
-		printf("Digite o valor do índice %d:  ",i);
-		scanf("%d",&vetor2[i]);
-		
-	}
-	
-	//resultado
-	printf("\n\n");
-	for(i = 0; i < 5; i++){
-	printf("vetor 1, índice %d: %d",i,vetor1[i]);
-	printf("\n\n");
-	
+main(){
 
-}
-	for(i = 0; i < 5; i++){
-		printf("vetor 2, índice %d: %d",i,vetor2[i]);
-			printf("\n\n");
+int par[10], impar[10], num, i, pares = 0, impares = 0;
 
-}
+do{
+    printf("\n Digite um numero: ");
+    scanf("%d", &num);
+
+        //Verifica se o numero é zero, se já for sai do loop
+        if(num == 0) {
+            break;  
+        }else{
+            if (num % 2 == 0){
+                par[pares] = num;
+                pares++;
+            } else {
+                impar[impares] = num;
+                impares++;
+            }
+        }
+ //Continua a repetir o do enquanto os arrays nao estão preenchidos       
+ }while(pares < 10  && impares < 10);
+
+ printf("\n Pares: ");
+ for (i=0; i< pares; i++){
+    printf("%d ", par[i]); 
+ }
+
+ printf("\n Impares: ");
+ for (i=0; i<impares; i++){
+    printf("%d ", impar[i]);
+ }
 }
