@@ -1,0 +1,16 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: blue;
+}
+.circulos{
+    background-color: black;
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+}
+#dois{
+    position: absolute;
+    right: 50%;
+    top: 50%;
+}
