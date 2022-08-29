@@ -10,5 +10,5 @@ int main(){
 	}
 	printf("Digite o número do índice que você deseja ver o número:\n");
 	scanf("%d",&n);
-	printf("o número no índice %d é:%d",vetor[i],vetor[n]);
+	printf("o número do índice %d é: %d",n,vetor[n]);
 }
