@@ -26,12 +26,10 @@ int main(){
 	//soma
 	printf("\nSoma de todos os números pares: %.0f\n",i);
 	printf("Soma de todos os números impares: %.0f\n",i2);
-	
 	printf("\n\n");
 	//média
 	printf("Média dos números pares: %.2f\n",media1);
 	printf("Média dos números ímpares: %.2f\n",media2);
-	
 	printf("\n\n");
 	//quantidade
 	printf("Quantidade de números pares: %d\n",pares);
