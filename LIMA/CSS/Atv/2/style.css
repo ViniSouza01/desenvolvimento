@@ -1,0 +1,31 @@
+body{
+    background-color: yellow;
+    margin: 0px;
+}
+#ret{
+    width: 100vw;
+    height: 15vh;
+    color: pink;
+    border: 0px solid;
+    background-color: pink;
+}
+#ret2{
+    width: 10vw;
+    height: 75vh;
+    border: 0px solid;
+    background-color: rgb(41, 93, 237);
+}
+
+#ret3{
+    width: 100vw;
+    height: 60vh;
+    border: 0px solid;
+    background-color: rgb(224, 148, 7);
+    
+}
+#quad1{
+    width: 10vw;
+    height: 10vh;
+    border: 0px solid;
+    border-color: red;
+}

@@ -1,0 +1,23 @@
+body {
+    background-color: green;
+    margin: 0px;
+}
+#ret{
+    width: 100vw;
+    height: 15vh;
+    color: pink;
+    border: 0px solid;
+    background-color: pink;
+}
+#ret2 {
+    height: 75vh;
+    width: 12vw;
+    background-color: orange;
+    border: 0px solid
+}
+#ret3{
+    width: 100vw;
+    height: 15vh;
+    border: 0px solid;
+    background-color: yellow;
+}
