@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 50vw;
+    height: 50vh;
+    border: 2px solid red;
+    margin: 30px;
+    display: flex; /*Deixa os itens alinhado em vertical/horizontal*/
+    align-items: center; /*Alinha os intens na posição central*/
+    justify-content: space-evenly; /*Cria um espaçamento entre os intens dentro da div*/
+    flex-wrap: wrap-reverse; /*Wrap é a quebra de linha. Wrap reverse vai colocar os elementos ao contrário ao quebrar a linha*/
+    overflow-y: scroll; /*Colocar um botão de rolagem quando atinge o limite*/
+}
+.container > div {
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    background-color: purple;
+}
+.card {
+    width: 200px;
+    height: 250px;
+    border: 1px solid #1dbfb2;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 50px;
+}
+.card-body > img {
+    width: 100%;
+}
+.card-body {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.card-body > button {
+    border: 1px solid #14e3d2;
+    border-radius: 10px;
+    background-color: #14e3d2;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin-top: 10px;
+    
+}
