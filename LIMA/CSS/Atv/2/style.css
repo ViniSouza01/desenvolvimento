@@ -5,7 +5,6 @@ body{
 #ret{
     width: 100vw;
     height: 15vh;
-    color: pink;
     border: 0px solid;
     background-color: pink;
 }
@@ -18,14 +17,82 @@ body{
 
 #ret3{
     width: 100vw;
-    height: 60vh;
+    height: 10vh;
     border: 0px solid;
     background-color: rgb(224, 148, 7);
     
 }
-#quad1{
+#ret4{
     width: 10vw;
-    height: 10vh;
+    height: 74.8vh;
+    border: 1px solid;
+    border-color: rgb(41, 93, 237);
+    background-color: rgb(41, 93, 237);
+    position: absolute;
+    right: 0%;
+    top: 15%;
+}
+#qd1{
+    width: 170px;
+    height: 170px;
+    border: 1px solid;
+    background-color: white;
+    position: absolute;
+    top: 40%;
+    right: 35%;
+}
+#qd2{
+    width: 170px;
+    height: 170px;
+    border: 1px solid;
+    background-color: white;
+    position: absolute;
+    top: 40%;
+    right: 55%;
+
+}
+#boca{
+    width: 240px;
+    height: 100px;
+    border: 1px solid;
+    background-color: brown;
+    position: absolute;
+    top: 67%;
+    right: 43%;
+}
+#somb1{
+    width: 200px;
+    height: 70px;
+    border: 1px solid;
+    background-color: black;
+    position: absolute;
+    top: 29%;
+    right: 57%;
+}
+#somb2{
+    width: 200px;
+    height: 70px;
+    border: 1px solid;
+    background-color: black;
+    position: absolute;
+    top: 29%;
+    right: 32%;
+}
+#olho1{
+    width: 70px;
+    height: 70px;
     border: 0px solid;
-    border-color: red;
+    background-color: black;
+    position: absolute;
+    top: 47%;
+    left: 37%;
+}
+#olho2{
+    width: 70px;
+    height: 70px;
+    border: 0px solid;
+    background-color: black;
+    position: absolute;
+    top: 47%;
+    right: 36%;
 }
