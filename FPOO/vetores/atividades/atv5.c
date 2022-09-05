@@ -1,33 +1,27 @@
-/*Para colocar nomes
-strcpy(nomes[0];"ana");
-strcpy(nomes[1];"maria");
-strcpy(nomes[2];"elaine");*/
-
-#include <stdio.h>
-#include <string.h>
-#include <locale.h>
+#include<stdio.h>
+#include<locale.h>
 int main(){
 	setlocale(LC_ALL,"");
-    char nomes[5] [20];
-    strcpy(nomes[0],"Joaquim");
-    strcpy(nomes[1],"Ana");
-    strcpy(nomes[2],"Maria");
-    strcpy(nomes[3],"Paulo");
-    strcpy(nomes[4],"Fernando");
-    
-	int i;
-    for(i = 0; i < 5; i++){
-    	printf("%s\n",nomes[i]);
-	}
-	//mostrar a letra 'm' de "Joaquim"
-	printf("%c\n",nomes[0][6]);
+	int v[10]; //vetores a ser classificados
+	int i,j; //contadores
+	int aux; //auxiliar para fazer trocas
 	
-	//Mostrar o código ascii da letra "a" e "b"
-	printf("%d\n",'a');
-	printf("%d\n",'b');
-	int ascii;
-	char letra;
-	printf("Digite algum número:\n");
-	scanf("%c",&letra);
-	printf("%c\n",letra);
+	for(i = 0; i < 10; i++){
+		printf("Digite o %d° valor inteiro: ",i);
+		scanf("%d",&v[i]);
+	}
+	//processamento - algoritmo de classificação e troca
+	for(i = 0; i < 10; i++){
+		for(j = i+1; j < 10; j++){
+			if(v[i] < v[j]){
+				aux = v[i];
+				v[i] = v[j];
+				v[j] = aux;
+			}
+		}
+	}
+	//saída com vetor ordenado
+	for(i = 0; i < 10; i++){
+		printf("[%d]:%d\n",i+1,v[i]);
+	}
 }

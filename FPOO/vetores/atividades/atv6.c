@@ -1,14 +1,28 @@
 #include<stdio.h>
 #include<locale.h>
+#include<time.h>
 int main(){
 	setlocale(LC_ALL,"");
-	int v[10];
-	int i;
-	for(i = 0; i < 10; i++){
-		int valor = -1;
-		do{
-			printf("Digite o %d° valor inteiro entre 0 e 1000: ",i+1);
-			scanf("%d",&v[i]);
-		}while(v[i]<0 || v[i]>1000);
+	srand(time(NULL));
+	int v[100];//vetores a ser classificados
+	int i,j; //contadores
+	int aux; //auxiliar para fazer trocas
+	
+	for(i = 0; i < 100; i++){
+		v[i] = rand()%1000;
 	}
+	for(i = 0; i < 100; i++){
+		for(j = i+1; j < 100; j++){
+			if(v[i] > v[j]){
+				aux = v[i];
+				v[i] = v[j];
+				v[j] = aux;
+			}
+		}
+	}
+	//saída com o vetor ordenado
+	for(i=0;i<100;i++){
+		printf("[%d]: %d\n",i+1,v[i]);
+	}
+
 }
