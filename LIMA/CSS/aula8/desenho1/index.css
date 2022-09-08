@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    height: 16vh;
+    margin: 4vw
+}
+#circulo1{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: blue; 
+}
+#circulo2 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: blue;
+}
+#circulo3 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: blue;
+}
+.container2 {
+    display: flex;
+    justify-content: space-between;
+    height: 25vh;
+}
+#circulo4 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: blue;
+}
+#circulo5 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: blue;
+}
+#circulo6 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: blue;
+}
+.container3 {
+    display: flex;
+    justify-content: space-evenly;
+    height: 25vh;
+}
+#circulo7 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: blue;
+}
+#circulo8 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: blue;
+}
+#circulo9 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: blue;
+}
+.container4 {
+    display: flex;
+    justify-content: center;
+    
+}
+#circulo10 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: blue;
+}
+#circulo11 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: blue;
+}
+#circulo12 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: blue;
+}

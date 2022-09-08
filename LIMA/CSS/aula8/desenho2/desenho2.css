@@ -1,0 +1,32 @@
+body {
+    background-color: blueviolet;
+    margin: 0;
+}
+.faixa{
+    height: 10vh;
+    width: 100vw;
+    background-color: gray;
+    display: flex;
+}
+#ciano {
+    width: 25vw;
+    height: 4vh;
+    background-color: aqua;
+    margin: 3vh;
+}
+#bege {
+    width: 10vw;
+    height: 4vh;
+    background-color: beige;
+    margin: 3vh;
+}
+.retangulo {
+    background-color: lightpink;
+    width: 20vw;
+    height: 100vh;
+}
+#amarelo {
+    width: 10vw;
+    height: 20vh;
+    background-color: bisque;
+}
