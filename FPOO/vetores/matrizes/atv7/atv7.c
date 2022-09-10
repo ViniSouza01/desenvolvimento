@@ -11,7 +11,7 @@ int main(){
 	num[i] = rand() % 10;
 	}
 	for(i = 1; i <= 9; i++){
-		printf("[%d]:%d\t",i,num[i]);
+		printf("[%d]: %d\t",i,num[i]);
 		if(i % 3 == 0) printf("\n\n");
 	}
 	printf("\n\n");
