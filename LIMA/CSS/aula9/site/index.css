@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    width: 100 vw;
+    height: 5vh;
+    background-color: #ebac0e;
+    display: flex;
+    padding: 15px;
+    justify-content: space-between;
+    display: flex;
+}
+.comeco {
+    display: flex;
+}
+#ophertas {
+    margin-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: small;
+}
+#cadastro {
+    margin-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: small;
+}
+.fim{ 
+    display: flex;
+    margin-right: 40px;
+    font-weight: bold;
+    font-size: small;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#area {
+    margin-left: 30px;
+}
+.faixa{
+    background-color: black;
+    width: 100vw;
+    height: 5vh;
+    display: flex;
+    padding: 10px;
+}
+#tele {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+    color: white;
+    margin-left: 50px;
+}
+#net{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+    color: orange;
+}
+img {
+    width: 100vw;
+    height: 90vh;
+}
+.quadrado {
+    position: absolute;
+    top: 38%;
+    left: 29%;
+}
+.forma {
+    width: 900px;
+    height: 200px;
+    background-color: black;
+    opacity: 1;
+}
+#texto{
+    font-size: xx-large;
+    color: white;
+}
+.perguntas{
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    height: 25vh;
+}
+#atividade {
+    border: none;
+    width: 250px;
+    height: 50px;   
+}
+#endereco {
+    border: none;
+    width: 250px;
+    height: 50px;
+}
