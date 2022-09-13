@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Pattaya&family=Press+Start+2P&family=Rubik+Iso&family=Silkscreen&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url('https://img.freepik.com/vetores-gratis/fundo-branco-abstrato_23-2148810113.jpg?w=2000');
+}
+header{
+    height: 10vh;
+    width: 100vw;
+    background-color: white;
+}
+.linha{
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+#logo {
+    display: flex;
+}
+#palav{
+    font-family:'Pattaya', sans-serif;
+    font-size: 60px;
+    margin-left: 20px;
+}
+#p{
+    color: aqua;
+    font-size: 60px;
+}
+#options > button {
+    margin-left: 15px;
+}
+#options {
+    margin-right: 10px;
+}
+#roxo{
+    width: 100vw;
+    height: 30px;
+    background-color: blueviolet;
+}
+#options > button{
+    font-size: 17px;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid;
+    cursor: pointer;
+}
+#options > button:hover {
+    border: 1px solid;
+    background-color: darkgrey;
+    color: white;   
+}
+.pt1 {
+    width:100vw;
+    height: 50vh;
+}
