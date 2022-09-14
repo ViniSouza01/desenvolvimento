@@ -1,15 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Pattaya&family=Press+Start+2P&family=Rubik+Iso&family=Silkscreen&display=swap');
-body{
-    margin: 0;
-    padding: 0;
-    background-image: url('https://img.freepik.com/vetores-gratis/fundo-branco-abstrato_23-2148810113.jpg?w=2000');
+@import url("https://fonts.googleapis.com/css2?family=Pattaya&family=Press+Start+2P&family=Rubik+Iso&family=Silkscreen&display=swap");
+body {
+    margin-right: 0px;
+    padding: 0px;
+    background-image: url("https://img.freepik.com/vetores-gratis/fundo-branco-abstrato_23-2148810113.jpg?w=2000");
 }
-header{
+header {
     height: 10vh;
     width: 100vw;
     background-color: white;
 }
-.linha{
+.linha {
     justify-content: space-between;
     display: flex;
     align-items: center;
@@ -17,12 +17,12 @@ header{
 #logo {
     display: flex;
 }
-#palav{
-    font-family:'Pattaya', sans-serif;
+#palav {
+    font-family: Pattaya, sans-serif;
     font-size: 60px;
     margin-left: 20px;
 }
-#p{
+#p {
     color: aqua;
     font-size: 60px;
 }
@@ -32,13 +32,12 @@ header{
 #options {
     margin-right: 10px;
 }
-#roxo{
+#roxo {
     width: 100vw;
     height: 30px;
     background-color: blueviolet;
 }
-#options > button{
-    font-size: 17px;
+#options > button { font-size: 17px;
     background-color: white;
     border-radius: 5px;
     border: 1px solid;
@@ -47,9 +46,36 @@ header{
 #options > button:hover {
     border: 1px solid;
     background-color: darkgrey;
-    color: white;   
+    color: white;
 }
-.pt1 {
-    width:100vw;
-    height: 50vh;
+main {
+    width: 80vw;
+    height: 20vh;
+    margin-top: 15vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    margin-left: 10vw;
 }
+.lorem {
+    display: flex;
+}
+#texto > h1 {
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: mediumblue;
+}
+#texto > div { font-size: 25px; font-family: Arial, Helvetica, sans-serif; }
+#texto > button { background-color: blue; color: white; border-radius: 5px; padding: 15px; font-size: 20px; }
+#texto > button:hover { cursor: pointer; }
+.main2 { margin-left: 10vw; width: 80vw; height: 20vh; margin-top: 10vw; align-items: center; justify-content: space-between; display: flex; flex-direction: row; }
+.txt2 > h1 { font-size: 40px; font-family: Arial, Helvetica, sans-serif; color: mediumblue; }
+.txt2 > p { font-size: 25px; font-family: Arial, Helvetica, sans-serif; }
+.txt2 > button { background-color: blue; color: white; border-radius: 5px; padding: 15px; font-size: 20px; }
+.txt2 > button:hover { cursor: pointer; }
+.main3 { margin-left: 10vw; display: flex; width: 80vw; height: 20vh; margin-top: 12vw; align-items: center; justify-content: space-between; flex-direction: row; }
+#txt3 > h1 { font-size: 40px; font-family: Arial, Helvetica, sans-serif; color: mediumblue; }
+#txt3 > p { font-size: 25px; font-family: Arial, Helvetica, sans-serif; }
+#txt3 > button { background-color: blue; color: white; border-radius: 5px; padding: 15px; font-size: 20px; }
+#txt3 > button:hover { cursor: pointer; }
