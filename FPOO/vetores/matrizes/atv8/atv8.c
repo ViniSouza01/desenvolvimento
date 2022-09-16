@@ -12,7 +12,7 @@ int main(){
 	}
 	printf("\n\n");
 	int posicao1,posicao2;
-	for(i = 21; i <= 25; i++){
+	for(i = 16; i <= 20; i++){
 		if(num[i] < menor){
 			menor = num[i];
 			posicao1 = i;
