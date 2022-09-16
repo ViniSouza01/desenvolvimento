@@ -66,16 +66,64 @@ main {
     font-family: Arial, Helvetica, sans-serif;
     color: mediumblue;
 }
-#texto > div { font-size: 25px; font-family: Arial, Helvetica, sans-serif; }
-#texto > button { background-color: blue; color: white; border-radius: 5px; padding: 15px; font-size: 20px; }
-#texto > button:hover { cursor: pointer; }
-.main2 { margin-left: 10vw; width: 80vw; height: 20vh; margin-top: 10vw; align-items: center; justify-content: space-between; display: flex; flex-direction: row; }
-.txt2 > h1 { font-size: 40px; font-family: Arial, Helvetica, sans-serif; color: mediumblue; }
-.txt2 > p { font-size: 25px; font-family: Arial, Helvetica, sans-serif; }
-.txt2 > button { background-color: blue; color: white; border-radius: 5px; padding: 15px; font-size: 20px; }
-.txt2 > button:hover { cursor: pointer; }
-.main3 { margin-left: 10vw; display: flex; width: 80vw; height: 20vh; margin-top: 12vw; align-items: center; justify-content: space-between; flex-direction: row; }
-#txt3 > h1 { font-size: 40px; font-family: Arial, Helvetica, sans-serif; color: mediumblue; }
-#txt3 > p { font-size: 25px; font-family: Arial, Helvetica, sans-serif; }
+#texto > div {
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#texto > button {
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 20px;
+}
+#texto > button:hover {
+    cursor: pointer;
+}
+.main2 { margin-left: 10vw;
+    width: 80vw;
+    height: 20vh;
+    margin-top: 10vw;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+}
+.txt2 > h1 {
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: mediumblue;
+}
+.txt2 > p {
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.txt2 > button {
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 20px;
+}
+.txt2 > button:hover {
+    cursor: pointer;
+}
+.main3 {
+    margin-left: 10vw;
+    display: flex;
+    width: 80vw;
+    height: 20vh;
+    margin-top: 12vw;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+#txt3 > h1 {
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: mediumblue;
+}
+#txt3 > p {
+    font-size: 25px; font-family: Arial, Helvetica, sans-serif; }
 #txt3 > button { background-color: blue; color: white; border-radius: 5px; padding: 15px; font-size: 20px; }
 #txt3 > button:hover { cursor: pointer; }
