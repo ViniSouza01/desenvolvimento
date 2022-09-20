@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Baskervville&family=Pattaya&family=Press+Start+2P&family=Raleway&family=Rubik+Iso&family=Silkscreen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baskervville&family=Libre+Baskerville:wght@700&family=Pattaya&family=Press+Start+2P&family=Raleway&family=Rubik+Iso&family=Silkscreen&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+}
+header {
+    width: 100vw;
+    height: 151px;
+    background-color: red;
+}
+#nome {
+    padding-top: 2.3vw;
+    padding-left: 23px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 60px;
+    vertical-align: center;
+    letter-spacing: 3px;
+    color: black;
+}
+#options {
+}
+.linha {
+    display: flex;
+}
+#bot {
+    width: 70px;
+    height: 55px;
+    padding-left: 20px;
+    padding-top: 54px;
+}
+ul>li {
+    list-style: none;
+    padding-left: 60px;
+    color: aliceblue;
+    padding-top: 1.5vw;
+}
+ul {
+    flex-direction: row;
+    display: flex;
+    font-size: 30px;
+    padding-right: 30px;
+    font-family: 'Baskervville', serif;
+}
+#foto {
+    opacity: 0.5;
+    display: table solid;
+    position: relative;
+}
+#cubo > img {
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    border-radius: 50px;
+    width: 10vw;
+    height: 20vh;
+}
+#cubo > p {
+    font-size: 60px;
+    font-family: 'Baskervville', serif;
+    top: 57%;
+    left: 35%;
+    position: absolute;
+}
+#prof > p {
+    font-size: 60px;
+    font-family: 'Baskervville', serif;
+    top: 70%;
+    left: 19%;
+    position: absolute;
+}
+button {
+    top: 87%;
+    left: 42%;
+    position: absolute;
+    font-size: 60px;
+    border-radius: 30px;
+    padding: 25px;
+    box-shadow: 7px 10px 8px black;
+    background-color: red;
+}
+button:hover {
+    background-color: yellow;
+    cursor: pointer;
+}
+.ibagens {
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+    top: 105%;
+    left: 43%;
+    position: absolute;
+}
+.ibagens > a > img{
+    width: 50px;
+    height: 50px;
+
+}
+#zap {
+    width: 75px;
+    height: 75px;
+    top: -22%;
+    left: 85%;
+    position: absolute;
+}
