@@ -1,16 +1,14 @@
 #include<stdio.h>
-#include<stdbool.h>
 #include<locale.h>
-bool maior(int valor1, int valor2);	
+float parafahrenheit(float celsius);
 int main (int aegc, char *argv[]){
 	setlocale(LC_ALL,"");
-	printf("%d",maior("%d","%d"));
-	return 0;
+	float c, f;
+	printf("Digite a temperatura em graus Celsius:\n");
+	scanf("%f",&c);
+	f = parafahrenheit(c);
+	printf("A temperatura em C°%.1f em F°%.1f",c,f);	
 }
-bool maior(int valor1, int valor2){
-	scanf("%d",&valor1);
-	scanf("%d",&valor2);
-	if(valor1 > valor2) printf("O número %d é maior",valor1);
-	else printf("O número %d é maior",valor2);
-	return printf("\n\n");
+float parafahrenheit(float celsius){
+	return celsius * 9 / 5 + 32;
 }

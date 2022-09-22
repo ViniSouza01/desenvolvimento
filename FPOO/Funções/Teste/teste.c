@@ -1,16 +1,10 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <stdbool.h>
-
-bool calcularMedia(float n1, float n2);
-
-int main(int argc, char *argv[]) {
-	printf("%d", calcularMedia(6,7));
-	
+#include<stdio.h>
+#include<locale.h>
+int main(){
+	setlocale(LC_ALL,"");
+	char string[10];
+	printf("Digite um caracter:\n");
+	gets(string);  //lê qualquer tipo de caractere
+	printf("Você digitou o caracter %s",string); //mostra na tela o caractere que você digitou
 	return 0;
-}
-
-bool calcularMedia (float n1, float n2){
-	float media = (n1 + n2) / 2;
-	return media >= 0;
 }
