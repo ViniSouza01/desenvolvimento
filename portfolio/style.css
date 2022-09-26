@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Baskervville&family=Pattaya&family=Press+Start+2P&family=Raleway&family=Rubik+Iso&family=Silkscreen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baskervville&family=Libre+Baskerville:wght@700&family=Pattaya&family=Press+Start+2P&family=Raleway&family=Rubik+Iso&family=Silkscreen&display=swap');
+canvas {
+	display: flex;
+	margin: 0;
+    padding: 0;
+	width: 100%;
+	height: 100%;
+    padding-top: 0;
+    padding-left: 0;
+    /* position: relative; */
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+header {
+    width: 98.7vw;
+    height: 120px;
+    background-color: red;
+    padding-right: 0;
+}
+
+#hamburguer {
+    padding: 10px;
+    border: none;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 10px;
+}
+
+#nome {
+    padding-top: 1rem;
+    padding-left: 1rem;
+    font-family: 'Raleway', sans-serif;
+    font-size: 60px;
+    vertical-align: center;
+    letter-spacing: 3px;
+    color: black;
+}
+
+.linha {
+    display: flex;
+    width: 90vw;
+}
+#bot {
+    width: 70px;
+    height: 55px;
+    padding-left: 20px;
+    padding-top: 1.5rem;
+}
+ul>li {
+    list-style: none;
+    padding-left: 60px;
+    color: aliceblue;
+    padding-top: 1.5vw;
+}
+ul {
+    flex-direction: row;
+    display: flex;
+    font-size: 30px;
+    padding-right: 30px;
+    font-family: 'Baskervville', serif;
+}
+#foto {
+    opacity: 0.5;
+    display: table solid;
+    position: relative;
+}
+#cubo > img {
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    border-radius: 50px;
+    width: 10vw;
+    height: 20vh;
+}
+#cubo > p {
+    font-size: 60px;
+    font-family: 'Baskervville', serif;
+    top: 57%;
+    left: 30%;
+    position: absolute;
+    color: red;
+}
+#prof > p {
+    font-size: 40px;
+    font-family: 'Baskervville', serif;
+    top: 70%;
+    left: 19%;
+    position: absolute;
+    color: red;
+}
+#contatos {
+    top: 87%;
+    left: 47%;
+    position: absolute;
+    font-size: 30px;
+    border-radius: 30px;
+    padding: 15px;
+    box-shadow: 7px 10px 8px black;
+    background-color: red;
+}
+#contatos:hover {
+    background-color: yellow;
+    cursor: pointer;
+}
+.ibagens {
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+    top: 105%;
+    left: 43%;
+    position: absolute;
+}
+.ibagens > a > img{
+    width: 50px;
+    height: 50px;
+
+}
+#zap {
+    width: 50px;
+    height: 50px;
+    top: -1%;
+    left: 90%;
+    position: absolute;
+}
+
+.options a {
+    text-decoration: none;
+    color: black;
+    font-size: 40px;
+    padding-top: 20px;
+}
+.options {
+    display: flex;
+    flex-direction: column;
+}
