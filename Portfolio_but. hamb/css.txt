@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+    width: 100vw;
+    height: 75px;
+    background-color: red;
+}
+
+#nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Botão */
+#hamburguer{
+  padding: .5rem;
+  margin: 1rem;
+  margin-right: 2rem;
+  border: none;
+  background: none;
+  font-size: 25;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+#hamburguer:hover{
+  cursor: pointer;
+}
+
+header h1 {
+  padding: 1.5rem;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+#menu li:hover{
+  background-color: gray;
+}
+
+#menu a {
+  padding: .5rem;
+  display: block;
+}
+
+#menu {
+  display: block;
+  list-style: none;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 30px;
+  position: absolute;
+  width: 25%;
+  background: #e7e7e7;
+  top: 75px;
+  height: 0px;
+  transition: .6s;
+  z-index: 1000;
+  visibility: hidden;
+  overflow-y: hidden;
+}
+
+#nav.active #menu {
+  height: calc(100vh - 75px);
+  visibility: visible;
+  overflow-y: auto;
+}
+
+#menu a{
+  padding: 1rem 0;
+  margin: 0 1rem;
+  border-bottom: 2px solid rgba(0, 0, 0, .07);
+}
