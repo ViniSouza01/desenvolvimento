@@ -9,7 +9,6 @@ canvas {
 	height: 100%;
     padding-top: 0;
     padding-left: 0;
-    /* position: relative; */
 }
 body {
     margin: 0;
@@ -75,7 +74,7 @@ ul {
     border-radius: 100px;
     width: 10vw;
     height: 20vh;
-    animation: fadein 10s infinite alternate;
+    animation: fadein 20s infinite alternate;
     /* -webkit-animation: fadein 10s infinite alternate; */
 }
 
@@ -126,4 +125,5 @@ ul {
 #menu {
     display: flex;
     flex-direction: column;
+    right: 0;
 }
