@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Baskervville&family=Pattaya&family=Press+Start+2P&family=Raleway&family=Rubik+Iso&family=Silkscreen&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Baskervville&family=Libre+Baskerville:wght@700&family=Pattaya&family=Press+Start+2P&family=Raleway&family=Rubik+Iso&family=Silkscreen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baskervville&family=Bebas+Neue&family=Libre+Baskerville:wght@700&family=Pattaya&family=Press+Start+2P&family=Raleway:ital,wght@0,400;1,200&family=Rubik+Iso&family=Silkscreen&display=swap');
 canvas {
 	display: flex;
 	margin: 0;
@@ -15,8 +16,8 @@ body {
     padding: 0;
 }
 header {
-    width: 98.7vw;
-    height: 120px;
+    width: 100%;
+    height: 12vh;
     background-color: red;
     padding-right: 0;
 }
@@ -32,7 +33,7 @@ header {
 #nome {
     padding-top: 1rem;
     padding-left: 1rem;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Baskervville', serif;
     font-size: 60px;
     vertical-align: center;
     letter-spacing: 3px;
@@ -71,68 +72,58 @@ ul {
     position: absolute;
     top: 40%;
     left: 45%;
-    border-radius: 50px;
+    border-radius: 100px;
     width: 10vw;
     height: 20vh;
+    animation: fadein 10s infinite alternate;
+    /* -webkit-animation: fadein 10s infinite alternate; */
 }
+
+@keyframes fadein {
+    from {rotate: 0deg;}
+    to {rotate: 360deg;}
+}
+
 #cubo > p {
     font-size: 60px;
     font-family: 'Baskervville', serif;
-    top: 57%;
-    left: 30%;
+    top: 57vh;
+    left: 33vw;
     position: absolute;
     color: red;
 }
 #prof > p {
     font-size: 40px;
     font-family: 'Baskervville', serif;
-    top: 70%;
-    left: 19%;
+    top: 35vw;
+    left: 54vh;
     position: absolute;
     color: red;
 }
-#contatos {
-    top: 87%;
-    left: 47%;
-    position: absolute;
-    font-size: 30px;
-    border-radius: 30px;
-    padding: 15px;
-    box-shadow: 7px 10px 8px black;
-    background-color: red;
-}
-#contatos:hover {
-    background-color: yellow;
-    cursor: pointer;
-}
+
 .ibagens {
-    width: 200px;
+    width: 0vw;
     display: flex;
     justify-content: space-around;
-    top: 105%;
-    left: 43%;
+    top: 90vh;
+    left: 50vw;
     position: absolute;
+    gap: 3rem;
 }
 .ibagens > a > img{
     width: 50px;
     height: 50px;
 
 }
-#zap {
-    width: 50px;
-    height: 50px;
-    top: -1%;
-    left: 90%;
-    position: absolute;
-}
 
-.options a {
+#menu a {
     text-decoration: none;
     color: black;
     font-size: 40px;
     padding-top: 20px;
 }
-.options {
+
+#menu {
     display: flex;
     flex-direction: column;
 }
