@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Baskervville&family=Pattaya&family=Press+Start+2P&family=Raleway&family=Rubik+Iso&family=Silkscreen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baskervville&family=Libre+Baskerville:wght@700&family=Pattaya&family=Press+Start+2P&family=Raleway&family=Rubik+Iso&family=Silkscreen&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+canvas {
+	display: flex;
+	margin: 0;
+    padding: 0;
+	width: 100%;
+	height: 100%;
+    padding-top: 0;
+    padding-left: 0;
+    position: absolute;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    background-color: #26DF10;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+header h1{
+    padding: 1rem;
+}
+
+#menu {
+    list-style: none;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+#menu a{
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+}
+
+main {
+    width: 100vw;
+    height: calc(100vh-80px);
+    /* position: fixed; */
+}
+
+#cubo {
+    position: fixed;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    top: 20%;
+    left: 43%;
+}
+
+#h1{
+    position: fixed;
+    color: #26DF10;
+    left: 25%;
+    bottom: 30%;
+}
+
+#button {
+    position: fixed;
+    padding: 10px;
+    font-size: 30px;
+    border-radius: 15px;
+    left:45%;
+    top: 75%;
+    color: green;
+    border: none;
+}
+
+#button:hover {
+    cursor: pointer;
+}

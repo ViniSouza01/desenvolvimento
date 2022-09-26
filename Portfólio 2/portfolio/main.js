@@ -31,9 +31,8 @@ function efeitoMatrix(neo) {
 
     const hamburguer = document.getElementById('hamburguer');
 
-function toggleMenu() {
-  const nav = document.getElementById('nav');
-  nav.classList.toggle('active')
-}
+    function toggleMenu() {
+        
+    }
 
-hamburguer.addEventListener('click', toggleMenu);
+    hamburguer.addEventlistener('click', toggleMenu);
