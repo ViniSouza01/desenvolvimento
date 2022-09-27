@@ -4,7 +4,7 @@
 bool valores (int v1,int v2);
 int main (int aegc, char *argv[]){
 	setlocale(LC_ALL,"");
-	printf("%d",valores(3978,3978));
+	printf("%d",valores(3979,3978));
 	return 0;
 }
 bool valores(int v1,int v2){

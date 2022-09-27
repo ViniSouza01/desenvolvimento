@@ -1,13 +1,17 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
+#include<stdio.h>
+#include<time.h>
+#include<stdlib.h>
+int sorteados(int i, int j, int vet[10], int igual);
+int main(){
+	int i;
+	for(i = 0; i < 10; i++) printf("%d\n",vet[i]);
+}
 
-int main() {
 
-    int i = 0, j, igual, vet[10];
 
-    srand(time(NULL));
-
+int sorteados (int i, int j, int vet[10], int igual){
+	srand(time(NULL));
+	i = 0;
     do{ // faça
         vet[i] = rand() % 10; // sorteia um número
         igual = 0;
@@ -25,5 +29,5 @@ int main() {
     }
     printf("\n\n");
 
-    return 0;
+    return vet[10];
 }

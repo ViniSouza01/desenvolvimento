@@ -46,7 +46,6 @@ header h1{
 main {
     width: 100vw;
     height: calc(100vh-80px);
-    /* position: fixed; */
 }
 
 #cubo {
@@ -54,14 +53,14 @@ main {
     width: 200px;
     height: 200px;
     border-radius: 100px;
-    top: 20%;
+    top: 30%;
     left: 43%;
 }
 
 #h1{
     position: fixed;
     color: #26DF10;
-    left: 25%;
+    left: 31%;
     bottom: 30%;
 }
 
@@ -77,5 +76,17 @@ main {
 }
 
 #button:hover {
-    cursor: pointer;
+
+}
+
+.imagens {
+    position: absolute;
+    top: 90%;
+    left: 40.5%;
+    justify-content: space-between;
+}
+
+#git, #zap, #insta {
+    width: 5%;
+    margin-left: 30px;
 }

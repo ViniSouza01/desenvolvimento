@@ -1,8 +1,0 @@
-const hamburguer = document.getElementById('hamburguer');
-
-function toggleMenu() {
-  const nav = document.getElementById('nav');
-  nav.classList.toggle('active')
-}
-
-hamburguer.addEventListener('click', toggleMenu);
