@@ -25,6 +25,10 @@ header {
     justify-content: space-between;
 }
 
+#btnMobile {
+    position: absolute;
+    display: none;
+}
 header h1{
     padding: 1rem;
 }
@@ -60,7 +64,7 @@ main {
 #h1{
     position: fixed;
     color: #26DF10;
-    left: 31%;
+    left: 26%;
     bottom: 30%;
 }
 
@@ -75,10 +79,6 @@ main {
     border: none;
 }
 
-#button:hover {
-
-}
-
 .imagens {
     position: absolute;
     top: 90%;
@@ -89,4 +89,56 @@ main {
 #git, #zap, #insta {
     width: 5%;
     margin-left: 30px;
+}
+
+
+/* Configuração para quando a tela do usuário for menor que 805 pixels*/
+@media (max-width: 805px) {
+    #nome {
+        font-size: 30px;
+    }
+
+    header{
+        height: 70px;
+    }
+
+    #btnMobile {
+        display: block; /*Para o botão hamburguer aparecer*/
+        position: absolute;
+        left: 80%;
+        top: 30%;
+        font-size: 25px;
+        display: flex;
+    }
+
+    #cubo {
+        width: 150px;
+        height: 150px;
+        top: 30%;
+    }
+
+    #h1 {
+        font-size: 20px;
+        left: %;
+    }
+
+    #button {
+        font-size: 20px;
+        left: 46%;
+    }
+
+    #imagens {
+        top: ;
+    }
+    
+    #menu {
+        display: flex;
+        flex-direction: column;
+        top: 100%;
+        position: relative;
+        background-color: #0dbf10;
+    }
+
+    #menu li{
+    }
 }

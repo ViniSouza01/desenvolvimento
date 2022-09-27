@@ -25,14 +25,15 @@ function efeitoMatrix(neo) {
     }
     //	Função de carregar a página e passar o id canvas para a função
     function carregar() {
-        var canvas = document.getElementById('canvas')
+        var canvas = document.getElementById('canvas');
         efeitoMatrix(canvas);
     }
-
-    const hamburguer = document.getElementById('hamburguer');
+    //Configuração quando o usuário apertar o botão
+    const btnMobile = document.getElementById('btnMobile');
 
     function toggleMenu() {
-        
+        const nav = document.getElementById('nav');
+        nav.classList.toggle('active');
     }
 
-    hamburguer.addEventlistener('click', toggleMenu);
+    btnMobile.addEventlistener('click', toggleMenu);
