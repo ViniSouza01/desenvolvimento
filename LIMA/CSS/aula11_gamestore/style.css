@@ -1,0 +1,147 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#ibagem {
+    position: fixed;
+}
+
+#preto {
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 88%;
+    opacity: 0.4;
+}
+header {
+    width: 100%;
+    height: 10vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+
+#logo {
+    color: red;
+    display: flex;
+    flex-direction: row;
+    font-size: 50px;
+    font-family: 'Rubik';
+    font-weight: bold;
+}
+
+#game {
+    color: #cfc436;
+}
+
+#store {
+    color: white;
+}
+
+#pesquisa {
+    border-radius: 7px;
+    width: 17vw;
+    border: none;
+    font-size: 15px;
+    display: flex;
+    background-color: #fff;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 5px;
+    outline: none;
+}
+
+#lupa {
+    width: 30px;
+    border-radius: 7px;
+    background-color: #cfc436;
+    padding: 10px;
+    
+}
+
+#account {
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+#login {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+#account p{
+    color: white;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Parte branca abaixo do cabeçalho */
+
+#nav {
+    width: 100%;
+    height: 8%;
+    background-color: white;
+    position: fixed;
+}
+#options {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    font-family: 'Open Sans';
+}
+
+#options li {
+    cursor: pointer;
+    padding: 12px;
+}
+
+/* Fundo da imagem abaixo da parte branca */
+
+#fundo {
+    height: 70%;
+    width: 100%;
+    top: 18%;
+    position: absolute;
+    display:;
+    margin-left: 24vw;
+    align-items: center;
+    display: flex;
+}
+
+#jogo {
+    width: 20%;
+    display: flex;
+}
+
+#nome-jogo {
+    color: white;
+    font-size: 30px;
+    font-family: 'Open sans';
+    line-height: 0.5;
+}
+
+#preco {
+    font-size: 14px;
+
+}
+
+#comprar {
+    margin-top: 10vh;
+    padding: 10px;
+    width: 6vw;
+    height: 5vh;
+    border-radius: 10px;
+    background-color: gray;
+    color: white;
+    font-weight: bold;
+}
