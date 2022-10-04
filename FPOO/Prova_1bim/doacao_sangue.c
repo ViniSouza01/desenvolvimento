@@ -12,14 +12,14 @@ int main(){
 	char nome[15];
 	continuar = 1;
 	while (continuar == 1){
-	printf("Olá usuário, por favor, digite seu nome abaixo:\n");
-	scanf("%s",&nome);
-	id = idade(idade);
-	sex = sexo(sexo);
-	temp = dias(dias);
-	if(sex == 1){
-		if(temp >= 0 && temp < 60) printf("%s, você não pode doar sangue ainda, espera completar 60 dias desde a sua última doação.\n",nome);
-		else printf("Muito bem %s! Você já pode doar sangue novamente\n",nome);
+		printf("Olá usuário, por favor, digite seu nome abaixo:\n");
+		scanf("%s",&nome);
+		id = idade(idade);
+		sex = sexo(sexo);
+		temp = dias(dias);
+		if(sex == 1){
+			if(temp >= 0 && temp < 60) printf("%s, você não pode doar sangue ainda, espera completar 60 dias desde a sua última doação.\n",nome);
+			else printf("Muito bem %s! Você já pode doar sangue novamente\n",nome);
 	}
 	if(sex == 2){
 		if(temp >= 0 && temp < 90) printf("%s, você não pode doar sangue ainda, espere completar 90 dias desde a sua última doação\n",nome);

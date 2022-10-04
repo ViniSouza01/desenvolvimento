@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Pattaya&family=Press+Start+2P&family=Rubik+Iso&family=Silkscreen&display=swap");
+
+body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+header {
+    height: 10vh;
+    width: 100vw;
+    background-color: white;
+    position: relative;
+    /* background-color: aqua; */
+}
+.linha {
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+}
+#logo {
+    display: flex;
+}
+#palav {
+    font-family: Pattaya, sans-serif;
+    font-size: 60px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+#p {
+    color: aqua;
+    font-size: 60px;
+}
+
+#company {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+nav ul li{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    padding: 3px;
+    background: none;
+
+}
+
+nav ul button {
+    background: none;
+    border-radius: 6px;
+    border: 0.5px solid black;
+}
+
+nav ul button:hover{
+    cursor: pointer;
+    background-color: gray;
+    color: white;
+}
+
+#icon {
+    width: 20px;
+    display: none;
+}
+
+#purple-line {
+    background-color: purple;
+    position: static;
+    width: 100vw;
+    height: 5vh;
+}
+
+#div1 {
+    display: flex;
+    width: 70vw;
+    justify-content: center;
+    background-color: aqua;
+    padding-left: 8vw;
+}
+
+#words1 {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10vw;
+}
+
+#img1 {
+    width: 600px;
+}
+
+@media (max-width: 1055px){ 
+    #logo {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    nav ul li, button {
+        display: none;
+    }
+
+    #icon {
+        display: block;
+        width: 50px;
+        margin-bottom: 10px;
+    }
+
+    #img1 {
+        width: 400px;
+    }
+
+    #words1{
+        font-size: 15px;
+    }
+}
