@@ -76,7 +76,7 @@ section {
         align-items: center;
     }
 
-    #menu:checked > div {
+    #menu:checked ~ div {
         display: block;
     }
 
