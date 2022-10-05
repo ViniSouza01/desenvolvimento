@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#background {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+}
+
+body {
+}
+
+header {
+    width: 100vw;
+    height: 10vh;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: right;
+    flex-direction: row;
+    position: relative;
+    align-items: center;
+}
+
+header ul {
+    display: flex;
+    justify-content: right;
+    color: white;
+    list-style: none;
+    gap: 2rem;
+}
+
+header  ul  li  a{
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#points{
+    width: 30px;
+    margin-right: 20px;
+    position: relative;
+    padding: 4px;
+    top: -8px;
+    filter: invert(100%);
+    border-radius: 10px;
+}
+
+#points:hover {
+    cursor: pointer;
+    background-color: #dedcdc;
+}
+
+#google {
+    width: 400px;
+    position: absolute;
+    display: flex;
+    top: 10%;
+    left: 39%;
+}
+
+input {
+    position: absolute;
+    width: 30vw;
+    height: 45px;
+    border-radius: 30px;
+    padding-left: 50px;
+    padding-right: 60px;
+    padding-top: 2px;
+    font-size: 16px;
+    outline: none;
+    border: none;
+}
+
+#lupa {
+    width: 20px;
+    display: flex;
+    position: relative;
+    left: -240px;
+    top: 0px;
+}
+
+#microfone {
+    width: 40px;
+    position: relative;
+    left: 245px;
+    top: 0;
+}
+
+div {
+    width: 100vw;
+    height: 5vh;
+    position: absolute;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    top: 31.5%;
+}
+
+nav {
+    background-color: white;
+    width: 15vw;
+    height: 45vh;
+    position: absolute;
+    right: 10px;
+    top: -230px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#account {
+    position: relative;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#account p {
+    padding-top: 10px;
+}
+
+#google-account {
+    width: 120px;
+}
+
+#search {
+    position: relative;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#search p {
+    padding-top: 15px;
+}
+
+#google-search {
+    width: 50px;
+}
+
+#maps {
+    position: relative;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#google-maps {
+    width: 100px;
+}
+
+#youtube {
+    position: relative;
+}
+
+#google-youtube {
+    width: 40px;
+}
