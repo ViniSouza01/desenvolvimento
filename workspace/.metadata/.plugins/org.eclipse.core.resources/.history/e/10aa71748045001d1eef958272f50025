@@ -1,0 +1,15 @@
+package padrao;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Gato gatao = new Gato();
+		Gato mimi = new Gato();
+		Gato tico = new Gato();
+		Gato tutu = new Gato();
+		
+		mimi.ronronar();
+		tutu.miar();
+	}
+
+}
