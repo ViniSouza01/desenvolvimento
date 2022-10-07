@@ -1,4 +1,4 @@
-package padrao;
+package Venda02;
 
 public class Venda {
 	// attributes

@@ -1,4 +1,4 @@
-package padrao;
+package Venda01;
 
 public class Main {
 	// instances of class Venda
