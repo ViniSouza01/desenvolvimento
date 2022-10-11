@@ -5,18 +5,20 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
-		String pacientes[] = new String[10];
-		float pesos[] = new float[10];
-		float alturas[] = new float[10];
-		Scanner scan = new Scanner(System.in);
-		for(int i = 0; i < 10; i++) {
-			System.out.printf("Digite o nome do %d paciente:\n",i + 1);
-			pacientes[i] = scan.next();
-			System.out.printf("Agora digite o peso de %s:\n",pacientes[i]);
-			pesos[i] = scan.nextFloat();
-			System.out.printf("Agora digite a altura de %s:\n",pacientes[i]);
-			alturas[i] = scan.nextFloat();
-		}
+		Diagnostico pacientes[] = new Diagnostico[10];
+		pacientes[0] = new Diagnostico();
+		pacientes[1] = new Diagnostico();
+		pacientes[2] = new Diagnostico();
+		pacientes[3] = new Diagnostico();
+		pacientes[4] = new Diagnostico();
+		pacientes[5] = new Diagnostico();
+		pacientes[6] = new Diagnostico();
+		pacientes[7] = new Diagnostico();
+		pacientes[8] = new Diagnostico();
+		pacientes[9] = new Diagnostico();
 		
+		for(int i = 0; i < 10; i++) {
+		System.out.println(pacientes[i].toString());
+		}	
 	}
 }

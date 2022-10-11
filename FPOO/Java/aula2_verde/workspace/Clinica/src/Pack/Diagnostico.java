@@ -1,21 +1,21 @@
 package Pack;
 
-import java.util.Scanner;
-
 public class Diagnostico {
-	String[] pacientes;
-	float[] pesos;
-	float[] alturas;
-}
+	String nome;
+	float peso;
+	float altura;
 
 float imc() {
-	return pesos[i] / (alturas[i] * alturas[i]);
+	return peso / (altura * altura);
 }
-
-String nomes() {
-	Scanner scan = new Scanner(System.in);
-	for(int i = 0; i < 10; i++) {
-		System.out.printf("Digite o nome do %d paciente",i+1);
-		pacientes[i] = scan.next();
+	String diagnosticos() {
+		if (imc() < 16)
+			return "Subpeso Severo";
+		else if(imc() < 20)
+			return "Subpeso";
+		else if (imc() < 25)
+			return "Normal";
+		else if(imc() < 30)
+			return("Sobrepeso")
 	}
 }
