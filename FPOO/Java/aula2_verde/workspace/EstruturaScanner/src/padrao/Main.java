@@ -1,4 +1,4 @@
-package padrao;
+ package padrao;
 
 import java.util.Scanner;
 
