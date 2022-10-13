@@ -9,9 +9,6 @@
     position: fixed;
 }
 
-body {
-}
-
 header {
     width: 100vw;
     height: 10vh;
@@ -37,7 +34,6 @@ header  ul  li  a{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-
 #points{
     width: 30px;
     margin-right: 20px;
@@ -53,12 +49,33 @@ header  ul  li  a{
     background-color: #dedcdc;
 }
 
+#checkbox {
+display: none;
+}
+
+#checkbox:checked ~ #nav {
+    display: flex;
+}
+
+#img-google {
+    height: 20vh;
+    /* background-color: white; */
+    top: 14vh;
+    align-items: center;
+    justify-content: center;
+}
+
 #google {
-    width: 400px;
+    width: 380px;
     position: absolute;
     display: flex;
-    top: 10%;
+    top: 15%;
     left: 39%;
+}
+
+#input-search {
+    top: -2.5vh;
+    height: 10vh;
 }
 
 input {
@@ -99,60 +116,74 @@ div {
     top: 31.5%;
 }
 
-nav {
+#nav {
     background-color: white;
     width: 15vw;
     height: 45vh;
     position: absolute;
     right: 10px;
-    top: -230px;
+    top: 70px;
     border-radius: 10px;
+    display: none;
+}
+main {
+    background-color: rgba(260, 260, 260, .5);
+    top: 10vh;
+    width: 30vw;
+    height: 20vh;
+    position: absolute;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
-#account {
-    position: relative;
+#sugest1 {
+    border-radius: 15px;
+    width: 130px;
+    height: 130px;
     flex-direction: column;
+}
+
+#sugest1 p {
+    margin-top: 10px;
+    color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-#account p {
-    padding-top: 10px;
+#sugest1:hover {
+    cursor: pointer;
+    background-color: rgba(260, 260, 260, .3);
 }
 
-#google-account {
-    width: 120px;
-}
-
-#search {
+#github-img {
+    width: 30px;
     position: relative;
+    background-color: white;
+    border-radius: 100px;
+    padding: 18px;
+}
+
+#uol-img {
+    width: 30px;
+    background-color: white;
+    border-radius: 100px;
+    padding: 18px;
+}
+
+#sugest2 {
+    border-radius: 30px;
+    width: 130px;
+    height: 130px;
     flex-direction: column;
+}
+
+#sugest2:hover {
+    cursor: pointer;
+    background-color: rgba(260, 260, 260, .3);
+}
+
+#sugest2 p {
+    margin-top: 10px;
+    color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-#search p {
-    padding-top: 15px;
-}
-
-#google-search {
-    width: 50px;
-}
-
-#maps {
-    position: relative;
-    flex-direction: column;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-#google-maps {
-    width: 100px;
-}
-
-#youtube {
-    position: relative;
-}
-
-#google-youtube {
-    width: 40px;
-}

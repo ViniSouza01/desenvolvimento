@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Google_Chrome_icon_%28February_2022%29.svg/768px-Google_Chrome_icon_%28February_2022%29.svg.png">
 </head>
 <body>
     <img id="background" src="https://lh6.googleusercontent.com/proxy/_rp-_su4ZYD9ViEe2c-5yqGJRrBItfdFII97eetF_trth2E1XSJ88IP1WEpHDXD7caTSykOR8yS3--xfUOkBo2IdKozyQGFx4zAf8Ikr_zMU5CD4D4pEp9lJFHzL=w3840-h2160-p-k-no-nd-mv" alt="">
@@ -13,31 +14,40 @@
         <ul>
             <li><a href="https://accounts.google.com/ServiceLogin/identifier?service=mail&passive=1209600&osid=1&continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F%3Ftab%3Drm%26ogbl&followup=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F%3Ftab%3Drm%26ogbl&emr=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin">Gmail</a></li>
             <li><a href="https://www.google.com.br/imghp?hl=pt-BR&tab=ri&ogbl">Imagens</a></li>
+            <input id="checkbox" type="checkbox">
+            <label for="checkbox">
             <img id="points" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/9dots.svg/2048px-9dots.svg.png" alt="">
+        </label>
+        <nav id="nav">
+        </nav>
         </ul>
     </header>
-    <img id="google" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/2560px-Google_2015_logo.svg.png" alt="">
+    <div id="img-google"><img id="google" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/2560px-Google_2015_logo.svg.png" alt=""></div>
     <div id="search-bar">
-        <input type="search" placeholder="Pesquise no Google ou digite um URL">
+        <div id="input-search"><input type="search" placeholder="Pesquise no Google ou digite um URL"></div>
         <img id="lupa" src="https://cdn.pixabay.com/photo/2017/01/13/01/22/magnifying-glass-1976105_1280.png" alt="">
         <img id="microfone" src="data:image/png;base64,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" alt="">
-        <nav>
-                <div id="account">
-                <img id="google-account" src="https://mundoconectado.com.br/uploads/chamadas/chamada-conta.jpg" alt="">
-                <p>Conta</p>
-            </div>
-                <div id="search">
-                    <img id="google-search" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/1200px-Google_%22G%22_Logo.svg.png" alt="">
-                    <p>Pesquisa</p>
-            </div>
-            <div id="maps">
-                <img id="google-maps" src="https://o.remove.bg/downloads/ccb83567-3bfc-45fd-aa99-45662e3a213c/googlemaps-removebg-preview.png" alt="">
-                <p>Maps</p>
-            </div>
-            <div id="youtube">
-                <img id="google-youtube" src="https://logodownload.org/wp-content/uploads/2014/10/youtube-logo-5-2.png" alt="">
-            </div>
-        
-    </nav>
+
+            <main>
+                <a href="https://github.com/">
+                    <div id="sugest1">
+                        <img id="github-img" src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="Git">
+                        <p>Github</p>
+                    </div>
+                </a>
+                <a href="https://www.uol.com.br/">
+                    <div id="sugest2">
+                        <img id="uol-img" src="https://logospng.org/download/uol/logo-uol-icon-1024.png" alt="">
+                        <p>UOL</p>
+                    </div>
+                </a>
+                    <a href="https://www.friv.com/">
+                    <div id="sugest3">
+                        <img id="friv-img" src="https://www.freelogovectors.net/wp-content/uploads/2022/06/friv-logo-freelogovectors.net_.png" alt="">
+                        <p>Friv</p>
+                    </div>
+                </a>
+            </main>
+
 </body>
 </html>
