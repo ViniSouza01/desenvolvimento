@@ -1,24 +1,22 @@
 package Pack;
 
+import java.util.Locale;
 import java.util.Scanner;
 
 public class Main {
 
 	public static void main(String[] args) {
-		Diagnostico pacientes[] = new Diagnostico[10];
-		pacientes[0] = new Diagnostico();
-		pacientes[1] = new Diagnostico();
-		pacientes[2] = new Diagnostico();
-		pacientes[3] = new Diagnostico();
-		pacientes[4] = new Diagnostico();
-		pacientes[5] = new Diagnostico();
-		pacientes[6] = new Diagnostico();
-		pacientes[7] = new Diagnostico();
-		pacientes[8] = new Diagnostico();
-		pacientes[9] = new Diagnostico();
-		
+		Scanner scan = new Scanner(System.in);
+		Paciente pacientes[] = new Paciente[10]; //10 objects of the class "Paciente"
+		System.out.println("Digite 10 nomes, peso e altura"); //Incoming message
+		for(int i = 0; i < 10; i++) { //loop to feel the array
+			pacientes[i] = new Paciente(); //create unique object
+			pacientes[i].nome = scan.next();
+			pacientes[i].peso = scan.nextFloat();
+			pacientes[i].altura = scan.nextFloat();
+		}
 		for(int i = 0; i < 10; i++) {
-		System.out.println(pacientes[i].toString());
-		}	
+			System.out.println(pacientes[i].toString());
+		}
 	}
 }
