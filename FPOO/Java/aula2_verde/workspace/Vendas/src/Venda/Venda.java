@@ -5,3 +5,11 @@ public class Venda {
 	int quantidade;
 	float precos;
 }
+
+public float subtotal() {
+	return precos * quantidade;
+}
+
+public String toString() {
+	return String.format("%s  \t%");
+}
