@@ -25,7 +25,7 @@ public class Paciente {
 	}
 	
 	public String toString() {
-		return String.format("%s  \t %.1f \t %.2f \t %s\n",nome, peso,altura, diagnosticos());
+		return String.format("%s    \t %.1f \t %.2f \t %s\n",nome, peso,altura, diagnosticos());
 	}
 }
 
