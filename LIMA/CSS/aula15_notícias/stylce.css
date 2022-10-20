@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#header1 {
+    background-color: #60ECCA;
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+#title {
+    font-size: 50px;
+    font-family: 'Kaushan Script';
+    margin-top: 5px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+#input-check {
+    display: flex;
+    gap: 2rem;
+}
+
+#button {
+    display: none;
+}
+
+label  {
+    width: 30px;
+    margin-left: 20px;
+    margin-top: 35px;
+    border-top: 4px solid black;
+    transition: .6s;
+}
+
+label:hover {
+    cursor: pointer;
+}
+
+label #hamburguer::after, #hamburguer::before {
+    width: 30px;
+    height:4px;
+    content: '';
+    display: block;
+    margin-top: 6px;
+    background: black;
+    transition: .6s;
+}
+
+#button:checked ~ #div-menu{
+color: black;}
+
+#button:checked ~ label{
+    border-top-color: transparent;
+}
+
+#button:checked ~ label #hamburguer::after{
+    transform: rotate(135deg);
+    margin-top: -4px;
+}
+
+#button:checked ~ label #hamburguer::before {
+    transform: rotate(-135deg);
+}
+
+#menu-header {
+    list-style: none;
+    display: flex;
+    gap: 5rem;
+    margin-right: 5vh;
+    font-size: 30px;
+    font-family: 'Kaushan Script';
+    margin-top: 25px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#menu-header > li:hover{
+    cursor: pointer;
+}
+
+#images-menu {
+    width: 40px;
+}
+
+#div-menu {
+    margin: 20px;
+    display: flex;
+    margin-top: 30px;
+}
+
+#div-menu > p {
+    margin: 10px;
+    font-size: 25px;
+}
