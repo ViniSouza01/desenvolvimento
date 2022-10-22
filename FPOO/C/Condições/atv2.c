@@ -6,15 +6,16 @@ Apresente o salário final*/
 int main(){
 	setlocale(LC_ALL,"");
 	char name[20];
-	float salario,final;
+	float salario, final;
 	int filhos;
 	printf("Digite o seu salário:\n");
 	scanf("%f",&salario);
 	printf("Digite quantos filhos você tem:\n");
 	scanf("%d",&filhos);
 	
-	if (salario < 1655){
-		final = filhos * 56.47;
-	}printf("Seu salário é de:\nR$%.2f", salario);
-	printf("Seu salário familia é de:")
+	// calculate the wage
+	if(salario < 2000) {
+		final = filhos * 45;
+		printf("Seu salário família é de: %.2f",final);
+	} else printf("Você não tem direito ao salário família");
 }
