@@ -13,7 +13,7 @@ public float faturamento() {
 	return precoVenda * qtdVendida;
 }
 
-public float lucro() {
+public float lucrodin() {
 	return faturamento() - investimento();
 }
 
@@ -22,6 +22,6 @@ public int lucroporcent() {
 }
 
 public String toString() {
-	return String.format("%s  \tR$%.2f    \tR$%.2f    \tR$%.2f    \t%d%%", produtos, investimento(), faturamento(), lucro(), lucroporcent());
+	return String.format("%s  \tR$%.2f    \tR$%.2f    \tR$%.2f    \t%d%%", produtos, investimento(), faturamento(), lucrodin(), lucroporcent());
 }
 }
