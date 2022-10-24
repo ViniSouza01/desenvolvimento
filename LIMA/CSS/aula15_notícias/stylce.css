@@ -244,11 +244,8 @@ margin-top: 10vh;
     margin-top: 3vh;
     display: flex;
     gap: 3rem;
-    text-decoration: underline;
     align-items: center;
-    background-color: #5DE2EB;
     width: 70vw;
-    flex-wrap: ;
 }
 
 #noticia4 img {
@@ -270,8 +267,11 @@ margin-top: 10vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #2178FA;
+    align-items: center;
+}
 
+.container1 h1 {
+    text-decoration: underline;
 }
 
 #btn-noticia4 {
@@ -281,7 +281,13 @@ margin-top: 10vh;
     margin-top: 5vh;
     width: 20vw;
     height: 5vh;
+    font-size: 25px;
+    font-weight: bold;
     font-family: 'Arima Madurai';
+}
+
+#btn-noticia4:hover {
+    cursor: pointer;
 }
 
 /* Notícia 5 */

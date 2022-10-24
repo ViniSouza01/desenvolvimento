@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-y: hidden;
+}
+
+#header-html {
+    display: flex;
+    justify-content: space-between;
+    background-color: #04558A;
+    color: white;
+    position: static;
+}
+
+header div {
+    margin: 20px;
+    font-family: 'Poppins';
+}
+
+header div:hover {
+    cursor: pointer;
+}
+
+body {
+    background-color:  #0182B0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+
+#home {
+    display: flex;
+    gap: 2rem;
+}
+
+/* Botão cadastrar */
+#cadastrar{
+    color: #F8C304;
+    border-color: #F8C304;
+    background-color: transparent;
+    border: 2px solid #F8C304;
+    width: 105px;
+    margin: 30px;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#cadastrar:hover {
+    cursor: pointer;
+}
+
+/* div roxa para sobrepor a tela inteira */
+#roxo {
+    width: 100vw;
+    height: 120vh;
+    background-color: rgba(134, 17, 138, .5);
+    position: absolute;
+    top: -15vh;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+#questions{
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    height: 60vh;
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* Quando o checkbox for ativado */
+#header-questions {
+    display: flex;
+    justify-content: right;
+    width: 20vw;
+    height: 5vh;
+}
+
+#checkbox {
+    display: none;
+}
+
+#checkbox:checked ~ #roxo {
+    display: flex;
+}
+
+#checkbox:checked ~ #questions {
+    display: flex;
+}
+
+/* o X para fechar a parte roxa */
+
+#questions label {
+    margin: 15px;
+    font-size: 15px;
+    font-family: 'Arial';
+    height: 40px;
+    width: 24px;
+}
+
+/* Divisões das perguntas */
+.input-questions {
+    margin-top: 30px;
+    margin-right: 15px;
+    margin-left: 15px;
+    padding: 10px;
+    padding-bottom: 20px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    outline: none;
+    border-bottom: 2px solid purple;
+}
+
+/* Botões para cancelar / cadastrar */
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;  
+    background-color: #0182B0;
+    margin-top: 15px;
+    height: 10vh;
+}
+#cadastrar2 {
+    padding: 15px;
+    font-size: 20px;
+    color: white;
+    background-color: #6C117B;
+    border-radius: 10px;
+}
+
+#cadastrar2:hover {
+    cursor: pointer;
+}
+
+#label-cancelar h1{
+    background-color: white;
+    font-size: 10px;
+    
+}
+
+#cancelar {
+    width: 20vw;
+    height: 10vh;
+    font-size: 20px;
+}
