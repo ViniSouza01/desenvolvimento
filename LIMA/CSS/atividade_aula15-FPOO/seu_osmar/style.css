@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    height: 10vh;
+    background-color: #f2e785;
+}
+
+#logo, header nav ul {
+    margin: 25px;
+}
+
+header nav {
+    margin-top: 50px;
+    border: 1px solid black;
+}
+
+header nav div{
+    margin-top: 50px;
+    margin-right: 50px;
+    display: flex;
+}
+
+header nav img {
+    width: 70px;
+}
+
+header nav p {
+    font-size: 25px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
