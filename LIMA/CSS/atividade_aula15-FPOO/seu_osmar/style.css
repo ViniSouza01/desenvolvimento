@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -6,6 +8,7 @@
 
 header {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     width: 100vw;
     height: 10vh;
@@ -16,24 +19,83 @@ header {
     margin: 25px;
 }
 
+#logo {
+    font-family: 'Garamond';
+}
+
+#logo:hover {
+    cursor: pointer;
+}
+
 header nav {
-    margin-top: 50px;
-    border: 1px solid black;
+    display: flex;
+    align-items: center;
 }
 
 header nav div{
-    margin-top: 50px;
-    margin-right: 50px;
+    margin-right: 60px;
     display: flex;
 }
 
+header nav div:hover{
+    cursor: pointer;
+}
+
 header nav img {
-    width: 70px;
+    width: 50px;
+    height: 50px;
 }
 
 header nav p {
     font-size: 25px;
-    margin-top: 20px;
+    margin-top: 13px;
     margin-left: 20px;
+    font-family: 'Calistoga';
 }
 
+main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: space-around;
+}
+
+.container {
+    border-radius: 10px;
+    margin-top: 5vh;
+    width: 10vw;
+    height: 34vh;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container h1 {
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+.container p {
+    font-size: 20px;
+}
+
+.container button {
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+    padding: 10px;
+    padding-left: 35px;
+    padding-right: 35px;
+    font-size: 20px;
+}
+
+.container button:hover {
+    cursor: pointer;
+}
+
+.container img {
+    width: 7vw;
+    margin-top: 5px
+}
