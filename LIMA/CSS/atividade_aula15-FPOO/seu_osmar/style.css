@@ -63,8 +63,8 @@ main {
 .container {
     border-radius: 10px;
     margin-top: 5vh;
-    width: 10vw;
-    height: 34vh;
+    width: 200px;
+    height: 330px;
     border: 2px solid black;
     display: flex;
     flex-direction: column;

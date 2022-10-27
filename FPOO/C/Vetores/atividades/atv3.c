@@ -1,3 +1,4 @@
+// Utilizando apenas um vetor de tamanho 6, troque os valores de maneira inversa
 #include<stdio.h>
 #include<locale.h>
 int main(){

@@ -1,3 +1,4 @@
+// gere 100 valores inteiros aleatorios e os classifique de ordem crescente
 #include<stdio.h>
 #include<locale.h>
 #include<time.h>
