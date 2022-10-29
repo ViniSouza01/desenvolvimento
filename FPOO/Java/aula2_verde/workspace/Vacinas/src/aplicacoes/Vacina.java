@@ -16,6 +16,6 @@ public class Vacina {
 	}
 	 
 	 public String toString() {
-		 return String.format("%s\t\t%s\t\t%s\t\t%s",nomePet, veterinario, nomeVacina, data);
+		 return String.format("%s \t\t%s \t\t%s \t\t%s",nomePet, veterinario, nomeVacina, data);
 	 }
 }
