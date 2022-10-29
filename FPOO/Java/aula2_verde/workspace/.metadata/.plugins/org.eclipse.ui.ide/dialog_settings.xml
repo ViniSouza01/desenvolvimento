@@ -22,6 +22,7 @@
 		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
 		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\Users\vinic\OneDrive\Área de Trabalho\SENAI\Diretorios\desenvolvimento-de-sistemas\FPOO\Java\aula2_verde\workspace"/>
 			<item value="D:\desenvolvimento-de-sistemas\FPOO\Java\aula2_verde\workspace"/>
 			<item value="C:\Users\vinic\OneDrive\Área de Trabalho\SENAI\Diretorios\desenvolvimento-de-sistemas\FPOO\Java\aula2_verde\workspace\vendas"/>
 			<item value="C:\Users\vinic\OneDrive\Área de Trabalho\SENAI\Diretorios\desenvolvimento-de-sistemas\FPOO\Java\aula2_verde\workspace\Vendas"/>
