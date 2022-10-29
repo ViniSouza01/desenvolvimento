@@ -1,3 +1,4 @@
+//criar dois vetores numéricos de dimensão 5 e apresentar a soma do primeiro vetor com o inverso do segundo
 #include<stdio.h>
 #include<locale.h>
 int main(){

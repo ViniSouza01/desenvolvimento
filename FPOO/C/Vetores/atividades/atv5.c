@@ -1,3 +1,4 @@
+// faça um programa que leia 10 valores inteiros em qualquer ordem e os classifique em ordem crescente
 #include<stdio.h>
 #include<locale.h>
 int main(){

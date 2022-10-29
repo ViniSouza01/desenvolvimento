@@ -1,3 +1,4 @@
+// programa que leia 5 nomes aleatórios e os classifique de ordem crescente
 #include<stdio.h>
 #include<locale.h>
 int main(){
