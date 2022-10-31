@@ -14,7 +14,7 @@ int main(){
 	//processamento - algoritmo de classificação e troca
 	for(i = 0; i < 10; i++){
 		for(j = i+1; j < 10; j++){
-			if(v[i] < v[j]){
+			if(v[i] > v[j]){
 				aux = v[i];
 				v[i] = v[j];
 				v[j] = aux;

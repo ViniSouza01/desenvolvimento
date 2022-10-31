@@ -13,7 +13,7 @@ int main(){
 	
 	//Escaneando os números digitados
 	do{
-		printf("digite um numero para entrar no vetor: ");
+		printf("Digite um numero para entrar no vetor: ");
 		scanf("%d",&num);
 			if(num % 2 == 0){
 				par[pares] = num;
