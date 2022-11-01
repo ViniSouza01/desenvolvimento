@@ -1,16 +1,2 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.util.Locale"/>
-<<<<<<< HEAD
-    <fullyQualifiedTypeName name="java.lang.System"/>
-    <fullyQualifiedTypeName name="java.lang.String"/>
-    <fullyQualifiedTypeName name="modelo.Venda"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
-=======
-    <fullyQualifiedTypeName name="java.lang.String"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
-    <fullyQualifiedTypeName name="java.lang.System"/>
->>>>>>> 0155bcbba8fdae56842b05c6d6607174e055465e
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
-    <fullyQualifiedTypeName name="java.util.Date"/>
-</qualifiedTypeNameHistroy>
+<qualifiedTypeNameHistroy/>
