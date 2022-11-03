@@ -1,0 +1,26 @@
+body {
+    
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+#circulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 200px;
+    width: 200px;
+    height: 200px;
+    border-radius: 150px;
+    border: 20px solid transparent;
+    background-color: conic-gradient(purple, blue, black);
+    border-image: linear-gradient(to left,  yellow, orange, red);
+    border-image-slice: 1;
+    transition: 3s;
+
+}
+#circulo:read-only {
+    animation: rotate(360deg);
+    
+}
