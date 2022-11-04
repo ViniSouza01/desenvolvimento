@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    background-color: white;
+    width: 710px;
+    padding-right: 60px;
+    height: 440px;
+    gap: 3rem;
+    border-radius: 3%;
+    margin-top: 200px;
+}
+
+#img-mobile {
+    display: none;
+}
+
+#img-desktop {
+    width: 360px;
+    height: 440px;
+    border-radius: 3% 0 0 3%;
+}
+
+#title {
+    font-family: 'Montserrat';
+}
+
+h1 {
+    font-family: 'Fraunces';
+    font-weight: bold;
+}
+
+#paragraph {
+    font-size: 14px;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    line-height: 20px;
+}
+
+#content {
+    line-height: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.prices {
+    display: flex;
+    gap: 2rem;
+    font-family: 'Fraunces';
+}
+
+.prices h1 {
+    color: hsl(158, 36%, 37%)   ;
+}
+
+button {
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    padding: 20px;
+    width: 250px;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+    display: flex;
+    gap: 1rem;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+button img {
+    width: 30px;
+    height: 30px;
+    filter: invert(100%);
+}
+
+button:hover {
+    cursor: pointer;
+    
+}
+
+@media(max-width: 375px) {
+    #img-desktop {
+        display: none;
+    }
+
+    #img-mobile {
+        display: block;
+        width: 150px;
+        height: 200px;
+    }
+
+    main {
+        margin-top: 20px;
+        width: 200px;
+        height: 400px;
+        gap: 1rem;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    #content {
+        gap: 1rem;
+    }
+
+    #paragraph {
+        font-size: 10px;
+    }
+
+    button {
+        font-size: 10px;
+        width: 200px;
+    }
+}
