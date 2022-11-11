@@ -18,7 +18,7 @@ public class Main {
 		System.out.println(funcionario.toString());
 
 		try {
-			BufferedWriter bw = new BufferedWriter(new FileWriter("./banco-de-dados/fgts.csv"));
+			BufferedWriter bw = new BufferedWriter(new FileWriter("./banco-de-dados/fgts.csv",true));
 			bw.write(funcionario.toString());
 			bw.close();
 			System.out.println("Arquivo criado com sucesso");

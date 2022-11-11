@@ -14,7 +14,7 @@ public class Funcionario {
 
 	public float irrf() {
 			if(salario <= 1903.98)
-				return salario;
+				return 0;
 			else if(salario <= 2826.65)
 				return (salario * (float) 0.075) - (float) 142.80;
 			else if(salario <= 3751.05)
