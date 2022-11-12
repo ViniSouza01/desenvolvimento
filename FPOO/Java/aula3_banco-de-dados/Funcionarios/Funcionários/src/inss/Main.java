@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.util.Scanner;
 
 public class Main {
-	static Funcionario funcionario = new Funcionario();
+	static Funcionario2 funcionario = new Funcionario2();
 	static Scanner scan = new Scanner(System.in);
 
 	public static void main(String[] args) {
@@ -17,13 +17,12 @@ public class Main {
 		System.out.println(funcionario.toString());
 
 		try {
-			BufferedWriter bw = new BufferedWriter(new FileWriter("./banco-de-dados/inss.csv",true));
+			BufferedWriter bw = new BufferedWriter(new FileWriter("./banco-de-dados/inss.csv", true));
 			bw.write(funcionario.toString());
 			bw.close();
 			System.out.println("Arquivo criado com sucesso");
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-
 	}
 }

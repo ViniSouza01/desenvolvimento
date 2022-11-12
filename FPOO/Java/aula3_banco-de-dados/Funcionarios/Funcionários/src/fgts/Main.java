@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class Main {
 	static Scanner scan = new Scanner(System.in);
-	static Funcionario funcionario = new Funcionario();
+	static Funcionario1 funcionario = new Funcionario1();
 
 	public static void main(String[] args) {
 		System.out.println("Digite o nome do funcionario e o seu salario");
@@ -18,7 +18,7 @@ public class Main {
 		System.out.println(funcionario.toString());
 
 		try {
-			BufferedWriter bw = new BufferedWriter(new FileWriter("./banco-de-dados/fgts.csv",true));
+			BufferedWriter bw = new BufferedWriter(new FileWriter("./banco-de-dados/fgts.csv", true));
 			bw.write(funcionario.toString());
 			bw.close();
 			System.out.println("Arquivo criado com sucesso");

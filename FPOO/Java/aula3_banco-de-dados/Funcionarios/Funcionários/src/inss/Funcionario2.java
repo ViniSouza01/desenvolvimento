@@ -1,11 +1,11 @@
 package inss;
-	
-public class Funcionario {
+
+public class Funcionario2 {
 	String nome;
 	float salario;
 	
-	Funcionario(){}
-	Funcionario(String nome, float salario){
+	Funcionario2(){}
+	Funcionario2(String nome, float salario){
 		this.nome = nome;
 		this.salario = salario;
 	}
@@ -23,4 +23,4 @@ public class Funcionario {
 		 public String toString() {
 			 return String.format("%s;%.2f;%.2f\r\n", nome, salario, inss());
 		 }
-	}
+}

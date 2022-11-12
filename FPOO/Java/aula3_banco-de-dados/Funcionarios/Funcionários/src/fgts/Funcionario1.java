@@ -1,6 +1,6 @@
 package fgts;
 
-public class Funcionario {
+public class Funcionario1 {
 	String nome;
 	float salario;
 	
@@ -8,8 +8,8 @@ public class Funcionario {
 		return salario * (float) 0.08;
 	}
 	
-	 Funcionario(){}
-	 Funcionario(String n, float s) {
+	 Funcionario1(){}
+	 Funcionario1(String n, float s) {
 		nome = n;
 		salario = s;
 	}

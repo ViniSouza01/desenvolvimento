@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.util.Scanner;
 
 public class Main {
-	static Funcionario pessoa = new Funcionario();
+	static Funcionario3 pessoa = new Funcionario3();
 	static Scanner scan = new Scanner(System.in);
 
 	public static void main(String[] args) {
@@ -24,5 +24,4 @@ public class Main {
 			e.printStackTrace();
 		}
 	}
-
 }
