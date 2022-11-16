@@ -51,6 +51,7 @@ h1 {
 }
 
 #content {
+    margin-top: 20px;
     line-height: 40px;
     display: flex;
     flex-direction: column;
@@ -90,33 +91,42 @@ button img {
 
 button:hover {
     cursor: pointer;
+    background-color: #1c3623;
     
 }
 
-@media(max-width: 375px) {
+@media(max-width: 600px) {
     #img-desktop {
         display: none;
     }
 
     #img-mobile {
         display: block;
-        width: 150px;
+        width: 260px;
         height: 200px;
+        border-radius: 10px 10px 0 0;
     }
 
     main {
-        margin-top: 20px;
+        margin-top: 50px;
         width: 200px;
-        height: 400px;
+        height: 500px;
         gap: 1rem;
+        flex-direction: column;
     }
 
     h1 {
         font-size: 20px;
     }
 
+    #title {
+        font-size: 13px;
+    }
+
     #content {
-        gap: 1rem;
+        gap: 12px;
+        margin-left: 20px;
+        line-height: normal;
     }
 
     #paragraph {
@@ -126,5 +136,21 @@ button:hover {
     button {
         font-size: 10px;
         width: 200px;
+        height: 20px;
+    }
+
+    button img {
+        width: 15px;
+        height: 15px;
+    }
+
+    .prices {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .prices p {
+        font-size: 11px;
+        color: rgba(0, 0, 0, .5);
     }
 }
