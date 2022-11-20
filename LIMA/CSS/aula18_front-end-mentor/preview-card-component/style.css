@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(217, 54%, 11%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10vh;
+}
+
+main {
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 700px;
+    background-color: hsl(216, 50%, 16%);
+    box-shadow: 0 10px 20px 10px rgba(0, 0, 0, .2);
+}
+
+header:hover{
+    cursor: pointer;
+}
+
+#cube {
+    width: 350px;
+    height: 350px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+#cube:hover ~ #background-cyan, #eye {
+    display: flex;
+    cursor: pointer;
+}
+
+#background-cyan {
+    width: 350px;
+    height: 350px;
+    margin-top: -254px;
+    border-radius: 10px;
+    background-color: hsl(178, 100%, 50%, 0.5);
+    position: relative;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+#eye {
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 700,
+    'GRAD' 200,
+    'opsz' 48;
+    filter: invert(100%);
+    position: absolute;
+}
+
+.content {
+    margin-top: 20px;
+    flex-direction: column;
+    display: flex;
+    gap: 1rem;
+    padding: 20px;
+}
+
+#title {
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    font-family: 'outfit';
+    font-weight: bold;
+}
+
+#title:hover {
+    color:hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+#paragraph {
+    color: rgba(100%, 100%, 100%, .7);
+    font-family: 'Outfit', sans-serif;
+    font-size: 22px;
+}
+
+.line {
+    display: flex;
+    justify-content: space-between;
+}
+
+.line div {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.line div img {
+    width: 20px;
+    height: 35px;
+    margin-top: 0px;
+}
+
+#span2 {
+    height: 1px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, .2);
+}
+
+#cyan {
+    color: hsl(178, 100%, 50%);
+    font-family: 'outfit';
+    font-weight: bold;
+}
+
+#gray {
+    font-weight: bold;
+    font-family: 'outfit';
+    color: rgba(255, 255, 255, 0.6);
+}
+
+#span {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48;
+  filter: invert(60%);
+}
+
+#name {
+    font-family: 'outfit';
+    color: rgba(100%, 100%, 100%, .7);
+    font-weight: bold;
+    display: flex;
+    gap: 7px;
+    align-items: center;
+}
+
+#name img {
+    width: 35px;
+    height: 36px;
+    border-radius: 100%;
+    border: 1px solid white;
+}
+
+#name-bold {
+    color: white;
+}
+
+#name-bold:hover {
+    cursor: pointer;
+    color:hsl(178, 100%, 50%);
+}

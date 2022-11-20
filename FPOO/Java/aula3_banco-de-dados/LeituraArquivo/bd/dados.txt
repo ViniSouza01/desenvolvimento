@@ -1,0 +1,8 @@
+Produto-Preco
+Arroz-29.9
+Feijao-8.98
+Batata-4.99
+Macarrao-5.65
+Pao-29.9
+Cogumelo-18.9
+Brocolis-10.5
