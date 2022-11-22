@@ -1,0 +1,6 @@
+Veiculos	Ano	Valor
+A media de valores dos veiculos e: 13511,17
+O veiculo mais caro e: Voyage	2015	35240.00
+O veiculo mais barato e: Fiesta	1996	2535.90
+O veiculo mais novo e: Uno	2011	10000.00
+O veiculo mais velho e: Corsa	1988	5000.00
