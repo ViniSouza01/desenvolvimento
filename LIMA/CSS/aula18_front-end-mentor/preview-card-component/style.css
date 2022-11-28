@@ -20,7 +20,7 @@ main {
     align-items: center;
     justify-content: center;
     width: 400px;
-    height: 700px;
+    height: 650px;
     background-color: hsl(216, 50%, 16%);
     box-shadow: 0 10px 20px 10px rgba(0, 0, 0, .2);
 }
@@ -34,6 +34,7 @@ header:hover{
     height: 350px;
     margin-top: 30px;
     border-radius: 10px;
+    position: relative;
 }
 
 #cube:hover ~ #background-cyan, #eye {
@@ -44,10 +45,10 @@ header:hover{
 #background-cyan {
     width: 350px;
     height: 350px;
-    margin-top: -254px;
+    margin-top: -354px;
     border-radius: 10px;
     background-color: hsl(178, 100%, 50%, 0.5);
-    position: relative;
+    position: absolute;
     display: none;
     align-items: center;
     justify-content: center;
@@ -156,4 +157,16 @@ header:hover{
 #name-bold:hover {
     cursor: pointer;
     color:hsl(178, 100%, 50%);
+}
+
+@media (max-width:360px) {
+    main {
+        height: 500px;
+        width: 200px;
+    }
+    
+    #cube {
+        width: 120px;
+        height: 120px;
+    }
 }

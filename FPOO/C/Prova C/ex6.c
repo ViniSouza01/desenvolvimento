@@ -17,4 +17,5 @@ int main() {
 		}
 	}
 	printf("A pessoa mais velha é %s com %d anos de idade", nome[maisVelho], idade[maisVelho]);
+	return 0;
 }
