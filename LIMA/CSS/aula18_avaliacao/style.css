@@ -73,22 +73,12 @@ header {
 }
 
 /* Opções */
-
-#menu-lateral:hover ~ .options {
-    display: flex;
-}
-
-#menu-lateral img:hover ~ aside div {
-    background-color: #b5afac;
-}
-
 #menu-lateral:hover img {
     margin-left: 50px;
 }
 
 #menu-lateral img {
     width: 45px;
-    z-index: 1;
 }
 
 .show {
@@ -115,6 +105,10 @@ header {
 #menu-lateral div:hover {
     background-color: #b5afac;
     cursor: pointer;
+}
+
+#menu-lateral:hover div {
+    justify-content: left;
 }
 
 /* conteúdo principal (gráficos) */
@@ -168,10 +162,34 @@ input {
     cursor: pointer;
 }
 
-/* media-query */
+/* media-query 1250px */
+@media (max-width: 1400px) {
+    #menu-lateral {
+        width: 100px;
+    }
+
+    #menu-lateral div img {
+        width: 35px;
+    }
+
+    #menu-lateral div {
+        gap: 3rem;
+    }
+
+    #menu-lateral:hover {
+        width: 170px;
+    }
+
+    #menu-lateral:hover img {
+        margin-left: 10px;
+    }
+}
+
+
+/* media-query mobile */
 @media (max-width: 390px) {
     body {
-        align-items: center;
+        display: block;
     }
 
     header {
