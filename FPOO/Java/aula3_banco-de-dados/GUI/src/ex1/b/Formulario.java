@@ -1,4 +1,4 @@
-package ex1;
+package ex1.b;
 
 import java.awt.TextField;
 import java.awt.event.ActionEvent;
