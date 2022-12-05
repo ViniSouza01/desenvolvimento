@@ -20,9 +20,7 @@ public class Main {
 			}
 		}
 		return candidato;
-
 	}
-
 	public static void main(String[] args) {
 		Urna voto = new Urna();
 		while (menu != 1) {

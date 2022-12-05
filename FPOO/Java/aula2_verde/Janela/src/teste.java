@@ -38,7 +38,7 @@ public class teste {
 	private JPasswordField password;
 	private final ButtonGroup buttonGroup = new ButtonGroup();
 
-	/**
+	/*
 	 * Launch the application.
 	 */
 	public static void main(String[] args) {
@@ -54,14 +54,14 @@ public class teste {
 		});
 	}
 
-	/**
+	/*
 	 * Create the application.
 	 */
 	public teste() {
 		initialize();
 	}
 
-	/**
+	/*
 	 * Initialize the contents of the frame.
 	 */
 	private void initialize() {
