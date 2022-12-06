@@ -41,5 +41,4 @@ public class Paciente {
 	public String toString() {
 		return String.format("Nome: %s\nAltura: %.2fm\nPeso: %.1fkg\nIMC: %.2f\nDiagnóstico: %s", nome, altura, peso, obterIMC(), obterDiagnostico());
 	}
-
 }
