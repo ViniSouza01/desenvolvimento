@@ -1,0 +1,15 @@
+body {
+    margin: 50px;
+    /* background-repeat: calc(100%); */
+    
+    background-image: linear-gradient(to right, red, yellow);
+    /* animation: amarelo 6s infinite; */
+}
+  
+  @keyframes amarelo {
+    0% {background-repeat: calc(100%); background-image: linear-gradient(red, yellow);}
+    25% {background-repeat: calc(100%); background-image: linear-gradient(to bottom, blue, purple);}
+    50% {background-repeat: calc(100%); background-image: linear-gradient(to bottom, yellowgreen, green);}
+    75% {background-repeat: calc(100%); background-image: linear-gradient(to bottom, white, black);}
+    100% {background-repeat: calc(100%); background-image: linear-gradient(to bottom, rgb(255, 160, 219), rgb(233, 14, 215) );}
+}
