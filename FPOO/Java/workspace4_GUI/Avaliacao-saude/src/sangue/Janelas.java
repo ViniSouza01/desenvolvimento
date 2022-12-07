@@ -83,12 +83,13 @@ public class Janelas extends JFrame implements ActionListener{
 
 	public static void main(String[] args) {
 		new Janelas().setVisible(true);
+		System.out.println("in operation");
 	}
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		if(e.getSource() == enviar) {
-			Doador pessoa = new Doador(fNome.getText(),fSexo.getText(),fIdade.getText(),fPeso.getText());
+			Doador pessoa = new Doador(fNome.getText(),Integer.parseInt(fIdade.getText()),fSexo.getText(),Float.parseFloat(fPeso.getText()));
 			resultado.setText(pessoa.toString());
 		}
 		if(e.getSource() == limpar) {
