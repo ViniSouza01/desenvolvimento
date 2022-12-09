@@ -1,0 +1,11 @@
+CRIAR UM BUCKET
+1 - Menu de navegação > Cloud Storage > Navegador > criar bucket
+dar o nome do bucket como ID do projeto
+
+2 - Escolher tipo de região (us-east1, Carolina do Sul) > selecionar "padrão" como classe de armazenamento > escolher "uniforme" para controle de acesso > "criar"
+
+3 - Fazer upload: clicar no bucket para aparecer as info > guia "objetos" > "upload de arquivos" > procurar o arquivo no explorador > após finalizado, aparecerá as info do arquivo
+
+4 - Compartilhar publicamente: Guia permissões > "Grant acess" ou "Adicionar" > Adicionar principais
+
+erro: "prevent public acess";

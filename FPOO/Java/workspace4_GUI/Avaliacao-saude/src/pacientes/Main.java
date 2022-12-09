@@ -2,6 +2,8 @@ package pacientes;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.BufferedWriter;
+import java.util.ArrayList;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -12,6 +14,7 @@ import javax.swing.JTextField;
 
 
 public class Main extends JFrame implements ActionListener{
+	ArrayList<String> lista = new ArrayList<>();
 	private static final long serialVersionUID = 1L;
 	JPanel painel;
 	JButton enviar, limpar;
@@ -86,6 +89,7 @@ public class Main extends JFrame implements ActionListener{
 		if (e.getSource() == enviar) {
 			Paciente pessoas = new Paciente(campoNome.getText(), Float.parseFloat(campoAltura.getText()), Float.parseFloat(campoPeso.getText()));
 			result.setText(pessoas.toString());
+			lista.add(pessoas.toString());
 		}
 		if(e.getSource() == limpar) {
 			result.setText("");

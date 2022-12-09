@@ -1,0 +1,52 @@
+- Criar bucket manualmente
+
+- Fazer upload de um objeto no bucket
+
+curl https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Ada_Lovelace_portrait.jpg/800px-Ada_Lovelace_portrait.jpg --output ada.jpg
+
+- Fazer upload da imagem do local em que ela foi salva no bucket criado:
+
+gsutil cp ada.jpg gs://YOUR-BUCKET-NAME
+
+- Remover a imagem transferida
+
+rm ada.jpg
+
+- Fazer o download da imagem armazenada no bucket para o Cloud Shell
+
+gsutil cp -r gs://YOUR-BUCKET-NAME/ada.jpg .
+
+** Retorno **
+Copying gs://YOUR-BUCKET-NAME/ada.jpg...
+/ [1 files][299.6 KiB/299.6 KiB]
+Operation completed over 1 objects/299.6 KiB.
+
+- Criar uma pasta chamada image-folder e copiar a imagem para ela
+
+gsutil cp gs://YOUR-BUCKET-NAME/ada.jpg gs://YOUR-BUCKET-NAME/image-folder/
+
+** retorno **
+Copying gs://YOUR-BUCKET-NAME/ada.jpg [Content-Type=image/png]...
+- [1 files] [ 299.6 KiB/ 299.6 KiB]
+Operation completed over 1 objects/299.6 KiB
+
+- Listar o conteúdo do bucket
+
+gsutil ls gs://YOUR-BUCKET-NAME
+
+- Detalhes sobre o arquivo de imagem enviado ao bucket
+
+gsutil ls -l gs://YOUR-BUCKET-NAME/ada.jpg
+
+- Conceder permissão de leitura a todos os usuários para o objeto armazenado no bucket
+
+gsutil acl ch -u AllUsers:R gs://YOUR-BUCKET-NAME/ada.jpg
+
+- Remover o acesso público
+
+gsutil acl ch -d AllUsers gs://YOUR-BUCKET-NAME/ada.jpg
+
+- Excluir objetos, nesse caso, a imagem do bucket
+
+gsutil rm gs://YOUR-BUCKET-NAME/ada.jpg
+
