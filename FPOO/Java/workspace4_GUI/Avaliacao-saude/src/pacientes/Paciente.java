@@ -1,25 +1,27 @@
 package pacientes;
 
+import javax.swing.JOptionPane;
+
 public class Paciente {
+	// attributes
 	 private String nome;
 	 private float altura;
 	 private float peso;
 	 private float imc;
-	
-	Paciente() {
-	}
 
-	Paciente(String nome, float altura, float peso) {
+	Paciente(String nome, String altura, String peso) {
 		this.nome = nome;
-		this.altura = altura;
-		this.peso = peso;
+		try {
+			this.altura = Float.parseFloat(altura);
+			this.peso = Float.parseFloat(peso);
+		} catch (Exception e) {
+			JOptionPane.showMessageDialog(null, e);
+		}
 	}
-
 	public float obterIMC() {
 		imc = peso / (altura * altura);
 		return imc;
 	}
-
 	public String obterDiagnostico() {
 	if(imc < 16.0)
 		return "Baixo peso (grau I)";
@@ -38,7 +40,11 @@ public class Paciente {
 	else return("Obesidade (grau III)");
 	}
 	
-	public String toString() {
-		return String.format("Nome: %s\nAltura: %.2fm\nPeso: %.1fkg\nIMC: %.2f\nDiagnóstico: %s", nome, altura, peso, obterIMC(), obterDiagnostico());
+	public  String toString() {
+		return String.format("%s - %.2fm - %.1fkg - IMC: %.2f - %s\n", nome, altura, peso, obterIMC(), obterDiagnostico());
+	}
+	
+	public String toCSV() {
+		return String.format("%s;%.2f;%.1f;IMC:%.2f;%s\n", nome, altura, peso, obterIMC(), obterDiagnostico());
 	}
 }

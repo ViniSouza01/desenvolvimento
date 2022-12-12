@@ -1,16 +1,22 @@
 package sangue;
 
+import javax.swing.JOptionPane;
+
 public class Doador {
 	private String nome;
 	private int idade;
-	private String sexo;
+	private char sexo;
 	private float peso;
 
-	public Doador(String nome, int idade, String sexo, float peso) {
+	public Doador(String nome, String idade, String sexo, String peso) {
 		this.nome = nome;
-		this.idade = idade;
-		this.sexo = sexo;
-		this.peso = peso;
+		this.sexo = sexo.charAt(0);
+		try {
+			this.idade = Integer.parseInt(idade);
+			this.peso = Float.parseFloat(peso);
+		} catch (Exception e) {
+			JOptionPane.showMessageDialog(null, e);
+		}
 	}
 	
 	public String obterDiagnostico() {

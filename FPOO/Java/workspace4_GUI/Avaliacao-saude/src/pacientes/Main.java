@@ -2,24 +2,27 @@ package pacientes;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.io.BufferedWriter;
 import java.util.ArrayList;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
 
+import dao.PacienteDao;
+
 
 public class Main extends JFrame implements ActionListener{
 	ArrayList<String> lista = new ArrayList<>();
-	private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = 2L;
 	JPanel painel;
-	JButton enviar, limpar;
+	JButton enviar, limpar, listar;
 	JLabel nome, peso, altura, resultado;
-	static String saida = "";
+	static String saidaArquivo = "";
+	PacienteDao pd = new PacienteDao();
 	JTextArea result;
 	JTextField campoNome, campoPeso, campoAltura;
 	
@@ -48,35 +51,38 @@ public class Main extends JFrame implements ActionListener{
 		painel.add(resultado);
 		resultado.setBounds(20,110,70,30);
 		
-		
-		
 		/* Inputs */
 		campoNome = new JTextField();
-		campoNome.setBounds(70,10,350,30);
+		campoNome.setBounds(70,10,390,30);
 		painel.add(campoNome);
 		
 		campoAltura = new JTextField();
-		campoAltura.setBounds(70,40,350,30);
+		campoAltura.setBounds(70,40,390,30);
 		painel.add(campoAltura);
 		
 		campoPeso = new JTextField();
-		campoPeso.setBounds(70,70,350,30);
+		campoPeso.setBounds(70,70,390,30);
 		painel.add(campoPeso);
 		
 		/* Buttons */
 		enviar = new JButton("Processar");
 		painel.add(enviar);
-		enviar.setBounds(320,110,100,25);
+		enviar.setBounds(360,110,95,25);
 		enviar.addActionListener(this);
 		
 		limpar = new JButton("Limpar");
 		painel.add(limpar);
-		limpar.setBounds(200,110,100,25);
+		limpar.setBounds(250,110,95,25);
 		limpar.addActionListener(this);
+		
+		listar = new JButton("Listar");
+		painel.add(listar);
+		listar.setBounds(140,110,95,25);
+		listar.addActionListener(this);
 		
 		/* JTextArea */
 		result = new JTextArea();
-		result.setBounds(20,150,400,200);
+		result.setBounds(20,150,440,200);
 		painel.add(result);
 	}
 	
@@ -87,14 +93,25 @@ public class Main extends JFrame implements ActionListener{
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		if (e.getSource() == enviar) {
-			Paciente pessoas = new Paciente(campoNome.getText(), Float.parseFloat(campoAltura.getText()), Float.parseFloat(campoPeso.getText()));
-			result.setText(pessoas.toString());
+		if(campoNome.getText().length() > 0 && campoAltura.getText().length() > 0 && campoPeso.getText().length() > 0) {
+			Paciente pessoas = new Paciente(campoNome.getText(), campoAltura.getText(), campoPeso.getText());
 			lista.add(pessoas.toString());
+			saidaArquivo += pessoas.toCSV();
+			result.setText(pessoas.toString());
+			pd.salvar(saidaArquivo);
+		}
+		else
+			JOptionPane.showMessageDialog(this, "Favor, preencher todos os campos");
 		}
 		if(e.getSource() == limpar) {
 			result.setText("");
+			campoNome.setText("");
+			campoPeso.setText("");
+			campoAltura.setText("");
 		}
-		
+		if(e.getSource() == listar) {
+			for(String l: lista)
+				result.append(l);
+		}
 	}
-
 }
