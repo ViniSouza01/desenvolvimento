@@ -29,9 +29,8 @@ header {
     width: 100px;
     height: 100px;
     border-radius: 50px;
-    /* background-color: #bec1c4; */
+    background-color: #bec1c4;
     margin-left: 10px;
-    background-image: url("./assets/luan-melancia.jpg");
 }
 
 .informations {
