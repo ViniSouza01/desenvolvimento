@@ -49,40 +49,40 @@ public class Main extends JFrame implements ActionListener{
 		
 		resultado = new JLabel("Resultado:");
 		painel.add(resultado);
-		resultado.setBounds(20,110,70,30);
+		resultado.setBounds(20,110,80,30);
 		
 		/* Inputs */
 		campoNome = new JTextField();
-		campoNome.setBounds(70,10,390,30);
+		campoNome.setBounds(70,10,405,30);
 		painel.add(campoNome);
 		
 		campoAltura = new JTextField();
-		campoAltura.setBounds(70,40,390,30);
+		campoAltura.setBounds(70,40,405,30);
 		painel.add(campoAltura);
 		
 		campoPeso = new JTextField();
-		campoPeso.setBounds(70,70,390,30);
+		campoPeso.setBounds(70,70,405,30);
 		painel.add(campoPeso);
 		
 		/* Buttons */
 		enviar = new JButton("Processar");
 		painel.add(enviar);
-		enviar.setBounds(360,110,95,25);
+		enviar.setBounds(365,110,110,25);
 		enviar.addActionListener(this);
 		
 		limpar = new JButton("Limpar");
 		painel.add(limpar);
-		limpar.setBounds(250,110,95,25);
+		limpar.setBounds(250,110,110,25);
 		limpar.addActionListener(this);
 		
 		listar = new JButton("Listar");
 		painel.add(listar);
-		listar.setBounds(140,110,95,25);
+		listar.setBounds(135,110,110,25);
 		listar.addActionListener(this);
 		
 		/* JTextArea */
 		result = new JTextArea();
-		result.setBounds(20,150,440,200);
+		result.setBounds(20,150,455,200);
 		painel.add(result);
 	}
 	

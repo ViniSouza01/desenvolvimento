@@ -7,7 +7,8 @@
 }
 
 header {
-    margin: 5px;
+    margin-top: 5px;
+    margin-bottom: 20px;
 }
 
 .circles {
@@ -16,8 +17,9 @@ header {
     justify-content: center;
     overflow-x: auto;
     display: flex;
-    padding-left: 280px;
+    padding-left: 295px;
 }
+
 .circles::-webkit-scrollbar {
     width: 0;
 }
@@ -46,6 +48,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    margin-bottom: 50px;
 }
 
 #perfil {
@@ -81,10 +84,6 @@ h3 {
     padding-right: 1rem;
 }
 
-#footer-publications2 {
-    margin-top: 15px;
-}
-
 #start {
     display: flex;
     gap: 1.5rem;
@@ -102,7 +101,7 @@ h3 {
     display: flex;
     justify-content: space-around;
     background-color: #e6e8eb;
-    position: sticky;
+    position: fixed;
     bottom: 0;
     width: 100%;
     height: 50px;

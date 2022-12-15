@@ -8,7 +8,7 @@ import javax.swing.JOptionPane;
 
 public class PacienteDao {
 	BufferedWriter bw;
-	String arquivo = "./src/bd/doadores.csv";
+	String arquivo = "./bd/doadores.csv";
 	public void salvar(String dados) {
 		try {
 			bw = new BufferedWriter(new FileWriter(arquivo));
