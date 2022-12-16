@@ -19,6 +19,7 @@ header {
     gap: 2rem;
     margin-left: 150px;
     margin-top: 40px;
+    flex-wrap: wrap;
 }
 
 .container {
@@ -130,7 +131,7 @@ input {
 }
 
 #grafico {
-     width: 600px;
+    width: 50vw;
 }
 
 #months {
@@ -230,7 +231,7 @@ input {
 
 
 /* media-query mobile */
-@media (max-width: 390px) {
+@media (max-width: 400px) {
     body {
         display: block;
     }
@@ -238,6 +239,7 @@ input {
     header {
         flex-direction: column;
         margin-left: 0;
+        align-items: center;
     }
 
     .container {
@@ -253,21 +255,28 @@ input {
     }
 
     main {
+        margin-top: 10vh;
+        margin-left: 0;
+        display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
     }
 
     #grafico {
-        width: 370px;
+        width: 95vw;
 
     }
 
     #months {
         display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
+        /* flex-direction: column; */
+        flex-wrap: wrap;
         margin-bottom: 100px;
+    }
+
+    .container2 {
+        width: 40vw;
+        height: 70px;
+        /* font-size: 10vw  ; */
     }
 
     #menu-lateral {
